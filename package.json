@@ -6,7 +6,8 @@
   "scripts": {
     "start": "python -m http.server 8000",
     "dev": "python -m http.server 8000",
-    "build": "echo 'No build process needed for static website'",
+    "build": "echo 'Static website - no build needed'",
+    "vercel-build": "echo 'Static website ready for deployment'",
     "test": "echo 'No tests specified'",
     "lint": "echo 'No linting configured'"
   },
