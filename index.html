@@ -44,181 +44,98 @@
     
     <title>⚖️ Công Ty Luật Chuyên Nghiệp - Tư Vấn Pháp Lý Hàng Đầu</title>
     
-    <!-- CSS Files - Inline for Vercel compatibility -->
-    <style>
-        /* CSS Variables */
-        :root {
-            --navy: #0a2540;
-            --gold: #d4af37;
-            --light-gold: #f4e4b7;
-            --white: #ffffff;
-            --light-gray: #f8f9fa;
-            --dark-gray: #2c3e50;
-        }
-
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--navy);
-            overflow-x: hidden;
-        }
-
-        /* Progress Bar */
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: var(--gold);
-            z-index: 9999;
-            transition: width 0.1s;
-            width: 0%;
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none !important;
-            }
-            .menu-toggle {
-                display: flex !important;
-            }
-            .hero h1 {
-                font-size: 2.5rem !important;
-            }
-            .hero p {
-                font-size: 1.1rem !important;
-            }
-            .capabilities-grid {
-                grid-template-columns: 1fr !important;
-            }
-        }
-    </style>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/mega-menu.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/capabilities.css">
+    <link rel="stylesheet" href="assets/css/expertise.css">
+    <link rel="stylesheet" href="assets/css/industries.css">
+    <link rel="stylesheet" href="assets/css/stats.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     <!-- Progress Bar -->
     <div class="progress-bar" id="progressBar"></div>
 
     <!-- Header -->
-    <header style="position: fixed; top: 0; left: 0; width: 100%; background: white; box-shadow: 0 2px 20px rgba(0,0,0,0.1); z-index: 1000; transition: all 0.3s;">
-        <nav style="max-width: 1400px; margin: 0 auto; padding: 1rem 5%; display: flex; align-items: center; justify-content: space-between;">
-            <div class="logo" style="font-size: 1.8rem; font-weight: 700; color: var(--navy); text-decoration: none;">LAW FIRM</div>
-            <div class="nav-main" style="display: flex; align-items: center;">
-                <ul class="nav-links" style="display: flex; list-style: none; gap: 2.5rem; margin: 0; padding: 0;">
-                    <li><a href="#home" style="color: var(--navy); text-decoration: none; font-weight: 500; transition: color 0.3s;">Trang Chủ</a></li>
-                    <li><a href="#capabilities" style="color: var(--navy); text-decoration: none; font-weight: 500; transition: color 0.3s;">Dịch Vụ</a></li>
-                    <li><a href="#expertise" style="color: var(--navy); text-decoration: none; font-weight: 500; transition: color 0.3s;">Chuyên Môn</a></li>
-                    <li><a href="#industries" style="color: var(--navy); text-decoration: none; font-weight: 500; transition: color 0.3s;">Ngành</a></li>
-                    <li><a href="#contact" style="color: var(--navy); text-decoration: none; font-weight: 500; transition: color 0.3s;">Liên Hệ</a></li>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">LAW FIRM</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#capabilities" class="nav-link">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column">
+                                    <h3>Dịch Vụ Chính</h3>
+                                    <ul>
+                                        <li><a href="#capabilities">Tư Vấn & Quy Định</a></li>
+                                        <li><a href="#capabilities">Thị Trường Vốn</a></li>
+                                        <li><a href="#capabilities">Doanh Nghiệp & M&A</a></li>
+                                        <li><a href="#capabilities">Giải Quyết Tranh Chấp</a></li>
+                                        <li><a href="#capabilities">Thuế & Cấu Trúc</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#expertise" class="nav-link">Chuyên Môn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#industries" class="nav-link">Ngành</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Liên Hệ</a>
+                    </li>
                 </ul>
-                <button class="menu-toggle" onclick="toggleMegaMenu()" style="display: none; flex-direction: column; cursor: pointer; background: none; border: none;">
-                    <span style="width: 25px; height: 3px; background: var(--navy); margin: 3px 0; transition: 0.3s;"></span>
-                    <span style="width: 25px; height: 3px; background: var(--navy); margin: 3px 0; transition: 0.3s;"></span>
-                    <span style="width: 25px; height: 3px; background: var(--navy); margin: 3px 0; transition: 0.3s;"></span>
-                </button>
             </div>
-        </nav>
-    </header>
+
+            <!-- Mobile menu button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Mega Menu -->
     <div id="mega-menu-container"></div>
 
     <!-- Hero Section -->
-    <div id="hero-container">
-        <!-- Fallback content if JS fails -->
-        <section class="hero" id="home" style="min-height: 100vh; padding-top: 80px; background: linear-gradient(135deg, #0a2540 0%, #1a4d7a 100%); display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
-            <div class="hero-content">
-                <h1 style="font-size: 4.5rem; margin-bottom: 1.5rem; font-weight: 700;">Đối Tác Pháp Lý Toàn Cầu</h1>
-                <p style="font-size: 1.4rem; margin-bottom: 3rem; opacity: 0.95;">Chúng tôi cung cấp tư vấn pháp lý chuyên sâu cho các giao dịch và vụ việc phức tạp nhất trên toàn thế giới</p>
-                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="#contact" style="padding: 1.1rem 2.5rem; background: #d4af37; color: #0a2540; text-decoration: none; border-radius: 6px; font-weight: 600;">Liên Hệ Tư Vấn</a>
-                    <a href="#capabilities" style="padding: 1.1rem 2.5rem; background: transparent; color: white; border: 2px solid white; text-decoration: none; border-radius: 6px; font-weight: 600;">Khám Phá Dịch Vụ</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <div id="hero-container"></div>
 
     <!-- Capabilities Section -->
-    <section class="capabilities" id="capabilities" style="padding: 7rem 5%; background: white;">
-        <div class="section-header" style="text-align: center; max-width: 800px; margin: 0 auto 5rem;">
-            <h2 class="section-title" style="font-size: 3rem; margin-bottom: 1rem; color: var(--navy); font-weight: 700;">Năng Lực Chuyên Môn</h2>
-            <p class="section-subtitle" style="font-size: 1.2rem; color: #6b7280; line-height: 1.7;">Chúng tôi cung cấp dịch vụ pháp lý toàn diện trong năm lĩnh vực chính</p>
-        </div>
-        <div class="capabilities-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1400px; margin: 0 auto;">
-            <div class="capability-card" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 3rem 2.5rem; border-radius: 12px; border: 1px solid #e5e7eb; transition: all 0.4s; cursor: pointer; position: relative; overflow: hidden;">
-                <div class="capability-number" style="font-size: 3rem; font-weight: 700; color: var(--gold); opacity: 0.3; line-height: 1; margin-bottom: 1rem;">01</div>
-                <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--navy); font-weight: 600;">Tư Vấn & Quy Định</h3>
-                <ul style="list-style: none; color: #6b7280; margin-bottom: 1.5rem;">
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ Luật hành chính và công</li>
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ Cạnh tranh và chống độc quyền</li>
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ An ninh mạng và bảo mật</li>
-                </ul>
-                <a href="#" style="color: var(--navy); text-decoration: none; font-weight: 600;">Xem tất cả →</a>
-            </div>
-            <div class="capability-card" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 3rem 2.5rem; border-radius: 12px; border: 1px solid #e5e7eb; transition: all 0.4s; cursor: pointer; position: relative; overflow: hidden;">
-                <div class="capability-number" style="font-size: 3rem; font-weight: 700; color: var(--gold); opacity: 0.3; line-height: 1; margin-bottom: 1rem;">02</div>
-                <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--navy); font-weight: 600;">Thị Trường Vốn</h3>
-                <ul style="list-style: none; color: #6b7280; margin-bottom: 1.5rem;">
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ Tài chính tài sản</li>
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ Thị trường nợ</li>
-                    <li style="padding: 0.6rem 0; padding-left: 1.8rem; position: relative; line-height: 1.6;">→ Công cụ phái sinh</li>
-                </ul>
-                <a href="#" style="color: var(--navy); text-decoration: none; font-weight: 600;">Xem tất cả →</a>
-            </div>
-        </div>
-    </section>
+    <div id="capabilities-container"></div>
+
+    <!-- Expertise Section -->
+    <div id="expertise-container"></div>
+
+    <!-- Industries Section -->
+    <div id="industries-container"></div>
+
+    <!-- Stats Section -->
+    <div id="stats-container"></div>
 
     <!-- Contact CTA Section -->
-    <section class="contact-cta" id="contact" style="padding: 7rem 5%; background: linear-gradient(135deg, #f4e4b7 0%, #fff8e1 100%);">
-        <div class="cta-content" style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 3rem; margin-bottom: 1.5rem; color: var(--navy); font-weight: 700;">Sẵn Sàng Bắt Đầu?</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2.5rem; color: var(--dark-gray); line-height: 1.7;">Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí về vấn đề pháp lý của bạn</p>
-            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#" style="padding: 1.1rem 2.5rem; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 6px; font-weight: 600;">Đặt Lịch Tư Vấn</a>
-                <a href="#" style="padding: 1.1rem 2.5rem; background: transparent; color: var(--navy); border: 2px solid var(--navy); text-decoration: none; border-radius: 6px; font-weight: 600;">Gửi Email</a>
-            </div>
-        </div>
-    </section>
+    <div id="contact-container"></div>
 
     <!-- Footer -->
-    <footer style="background: var(--navy); color: white; padding: 4rem 5% 2rem;">
-        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
-            <div>
-                <h4 style="color: var(--gold); margin-bottom: 1.5rem; font-size: 1.2rem;">Về Chúng Tôi</h4>
-                <p style="color: rgba(255,255,255,0.8); line-height: 1.7;">Công ty luật hàng đầu với hơn 15 năm kinh nghiệm cung cấp dịch vụ pháp lý chuyên nghiệp.</p>
-            </div>
-            <div>
-                <h4 style="color: var(--gold); margin-bottom: 1.5rem; font-size: 1.2rem;">Dịch Vụ</h4>
-                <ul style="list-style: none;">
-                    <li style="margin-bottom: 0.8rem;"><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Tư vấn & Quy định</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Thị trường Vốn</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Doanh nghiệp & M&A</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 style="color: var(--gold); margin-bottom: 1.5rem; font-size: 1.2rem;">Liên Hệ</h4>
-                <ul style="list-style: none;">
-                    <li style="margin-bottom: 0.8rem;"><a href="tel:+84123456789" style="color: rgba(255,255,255,0.8); text-decoration: none;">+84 123 456 789</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="mailto:info@lawfirm.vn" style="color: rgba(255,255,255,0.8); text-decoration: none;">info@lawfirm.vn</a></li>
-                    <li style="margin-bottom: 0.8rem;"><a href="#" style="color: rgba(255,255,255,0.8); text-decoration: none;">Hà Nội, Việt Nam</a></li>
-                </ul>
-            </div>
-        </div>
-        <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6);">
-            <p>&copy; 2025 Law Firm. Tất cả quyền được bảo lưu.</p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <!-- Preload critical resources -->
     <link rel="preload" href="assets/css/variables.css" as="style">
@@ -230,61 +147,20 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
-    <!-- JavaScript Files - Inline for Vercel compatibility -->
+    <!-- JavaScript Files -->
     <script>
+        // Check if all files load properly
         console.log('Loading JavaScript components...');
-        
-        // Progress bar
-        function updateProgressBar() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollPercent = (scrollTop / scrollHeight) * 100;
-            document.getElementById('progressBar').style.width = scrollPercent + '%';
-        }
-
-        // Header scroll effect
-        function updateHeader() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 2px 30px rgba(0,0,0,0.15)';
-            } else {
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-            }
-        }
-
-        // Smooth scroll for navigation links
-        function initSmoothScroll() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        }
-
-        // Initialize everything
-        document.addEventListener('DOMContentLoaded', function() {
-            updateProgressBar();
-            updateHeader();
-            initSmoothScroll();
-        });
-
-        window.addEventListener('scroll', function() {
-            updateProgressBar();
-            updateHeader();
-        });
-
-        // Mobile menu toggle
-        function toggleMegaMenu() {
-            console.log('Mobile menu toggled');
-        }
     </script>
+    <script src="assets/js/components/mega-menu.js"></script>
+    <script src="assets/js/components/hero.js"></script>
+    <script src="assets/js/components/capabilities.js"></script>
+    <script src="assets/js/components/expertise.js"></script>
+    <script src="assets/js/components/industries.js"></script>
+    <script src="assets/js/components/stats.js"></script>
+    <script src="assets/js/components/contact.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
     
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
