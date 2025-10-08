@@ -1,0 +1,55 @@
+{
+  "name": "professional-law-firm-website",
+  "version": "1.0.0",
+  "description": "Website landing page chuyên nghiệp cho công ty luật với thiết kế hiện đại, responsive và tối ưu SEO",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static website'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "law-firm",
+    "legal-services",
+    "landing-page",
+    "website",
+    "responsive",
+    "seo",
+    "html5",
+    "css3",
+    "javascript",
+    "legal-consulting",
+    "lawyer",
+    "attorney",
+    "legal-advice",
+    "vietnam",
+    "hanoi"
+  ],
+  "author": {
+    "name": "Law Firm",
+    "email": "info@lawfirm.vn",
+    "url": "https://lawfirm.vn"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/duogbachdev/professional-law-firm-website#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duogbachdev/professional-law-firm-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duogbachdev/professional-law-firm-website/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}

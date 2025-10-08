@@ -1,0 +1,118 @@
+/* Capabilities Section */
+.capabilities {
+    padding: 7rem 5%;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.capability-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.capability-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gold);
+    transform: scaleY(0);
+    transition: transform 0.4s;
+}
+
+.capability-card:hover::before {
+    transform: scaleY(1);
+}
+
+.capability-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: var(--gold);
+}
+
+.capability-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.capability-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.capability-list {
+    list-style: none;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.capability-list li {
+    padding: 0.6rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.capability-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.view-all-link {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.view-all-link:hover {
+    color: var(--gold);
+    gap: 1rem;
+}

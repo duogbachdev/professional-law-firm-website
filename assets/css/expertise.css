@@ -1,0 +1,69 @@
+/* Expertise Detail Section */
+.expertise-detail {
+    padding: 7rem 5%;
+    background: var(--light-gray);
+}
+
+.expertise-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 3rem auto 0;
+}
+
+.category-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--gold), var(--light-gold));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-card h4 {
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.category-services {
+    list-style: none;
+    color: #6b7280;
+}
+
+.category-services li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #f3f4f6;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.category-services li:last-child {
+    border-bottom: none;
+}
+
+.category-services li:hover {
+    color: var(--gold);
+    padding-left: 0.5rem;
+}

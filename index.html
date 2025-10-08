@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Cung cấp dịch vụ tư vấn pháp lý toàn diện: M&A, tranh tụng, thị trường vốn, sở hữu trí tuệ, luật doanh nghiệp và nhiều lĩnh vực khác tại Hà Nội.">
+    <meta name="keywords" content="công ty luật, tư vấn pháp lý, luật sư, M&A, tranh tụng, thị trường vốn, sở hữu trí tuệ, luật doanh nghiệp, luật hình sự, luật dân sự, luật bất động sản, luật lao động, luật thuế, luật công nghệ">
+    <meta name="author" content="Law Firm">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="language" content="Vietnamese">
+    <meta name="geo.region" content="VN">
+    <meta name="geo.placename" content="Hà Nội">
+    <meta name="geo.position" content="21.0285;105.8542">
+    <meta name="ICBM" content="21.0285, 105.8542">
+    <link rel="canonical" href="https://lawfirm.vn/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lawfirm.vn/">
+    <meta property="og:title" content="⚖️ Công Ty Luật Chuyên Nghiệp - Tư Vấn Pháp Lý Hàng Đầu">
+    <meta property="og:description" content="Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Dịch vụ tư vấn pháp lý toàn diện: M&A, tranh tụng, thị trường vốn tại Hà Nội.">
+    <meta property="og:image" content="https://lawfirm.vn/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Law Firm - Công ty luật chuyên nghiệp">
+    <meta property="og:site_name" content="Law Firm">
+    <meta property="og:locale" content="vi_VN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lawfirm.vn/">
+    <meta property="twitter:title" content="⚖️ Công Ty Luật Chuyên Nghiệp - Tư Vấn Pháp Lý Hàng Đầu">
+    <meta property="twitter:description" content="Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Dịch vụ tư vấn pháp lý toàn diện: M&A, tranh tụng, thị trường vốn tại Hà Nội.">
+    <meta property="twitter:image" content="https://lawfirm.vn/assets/images/og-image.jpg">
+    <meta property="twitter:image:alt" content="Law Firm - Công ty luật chuyên nghiệp">
+    <meta property="twitter:site" content="@lawfirm">
+    <meta property="twitter:creator" content="@lawfirm">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <title>⚖️ Công Ty Luật Chuyên Nghiệp - Tư Vấn Pháp Lý Hàng Đầu</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/mega-menu.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/capabilities.css">
+    <link rel="stylesheet" href="assets/css/expertise.css">
+    <link rel="stylesheet" href="assets/css/industries.css">
+    <link rel="stylesheet" href="assets/css/stats.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">LAW FIRM</div>
+            <div class="nav-main">
+                <ul class="nav-links">
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#capabilities">Dịch Vụ</a></li>
+                    <li><a href="#expertise">Chuyên Môn</a></li>
+                    <li><a href="#industries">Ngành</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMegaMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mega Menu -->
+    <div id="mega-menu-container"></div>
+
+    <!-- Hero Section -->
+    <div id="hero-container"></div>
+
+    <!-- Capabilities Section -->
+    <div id="capabilities-container"></div>
+
+    <!-- Expertise Section -->
+    <div id="expertise-container"></div>
+
+    <!-- Industries Section -->
+    <div id="industries-container"></div>
+
+    <!-- Stats Section -->
+    <div id="stats-container"></div>
+
+    <!-- Contact CTA Section -->
+    <div id="contact-container"></div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/variables.css" as="style">
+    <link rel="preload" href="assets/css/base.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/components/mega-menu.js" defer></script>
+    <script src="assets/js/components/hero.js" defer></script>
+    <script src="assets/js/components/capabilities.js" defer></script>
+    <script src="assets/js/components/expertise.js" defer></script>
+    <script src="assets/js/components/industries.js" defer></script>
+    <script src="assets/js/components/stats.js" defer></script>
+    <script src="assets/js/components/contact.js" defer></script>
+    <script src="assets/js/components/footer.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Law Firm",
+        "description": "Công ty luật hàng đầu với hơn 15 năm kinh nghiệm cung cấp dịch vụ pháp lý chuyên nghiệp",
+        "url": "https://lawfirm.vn",
+        "telephone": "+84 123 456 789",
+        "email": "info@lawfirm.vn",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hà Nội",
+            "addressCountry": "VN"
+        },
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Vietnam"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Dịch vụ pháp lý",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tư vấn & Quy định"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Thị trường Vốn"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Doanh nghiệp & M&A"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tranh tụng"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Tài chính"
+                    }
+                }
+            ]
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "2500"
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer"
+    }
+    </script>
+</body>
+</html>

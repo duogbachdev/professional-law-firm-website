@@ -1,0 +1,25 @@
+/* Contact CTA */
+.contact-cta {
+    padding: 7rem 5%;
+    background: linear-gradient(135deg, var(--light-gold) 0%, #fff8e1 100%);
+}
+
+.cta-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
