@@ -59,26 +59,15 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     
-    <!-- Fix header layout -->
+    <!-- Fix header layout to match original -->
     <style>
-        /* Fix mega menu display */
-        .mega-menu {
+        /* Hide mega menu */
+        #mega-menu-container {
             display: none !important;
         }
         
-        /* Fix navigation layout */
-        .nav-list {
-            display: flex !important;
-            flex-direction: row !important;
-            gap: 2.5rem !important;
-        }
-        
-        .nav-list li {
-            position: relative !important;
-        }
-        
         /* Ensure header is fixed and proper height */
-        .nav {
+        header {
             position: fixed !important;
             top: 0 !important;
             left: 0 !important;
@@ -90,7 +79,7 @@
             transition: all 0.3s ease !important;
         }
         
-        .nav-container {
+        nav {
             display: flex !important;
             justify-content: space-between !important;
             align-items: center !important;
@@ -99,7 +88,7 @@
             margin: 0 auto !important;
         }
         
-        .nav-logo {
+        .logo {
             font-size: 1.6rem !important;
             font-weight: 700 !important;
             color: var(--navy) !important;
@@ -107,7 +96,26 @@
             letter-spacing: -0.5px !important;
         }
         
-        .nav-link {
+        .nav-main {
+            display: flex !important;
+            gap: 3rem !important;
+            align-items: center !important;
+        }
+        
+        .nav-links {
+            display: flex !important;
+            gap: 2.5rem !important;
+            list-style: none !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .nav-links li {
+            position: relative !important;
+        }
+        
+        .nav-links a {
             text-decoration: none !important;
             color: var(--navy) !important;
             font-weight: 500 !important;
@@ -116,12 +124,12 @@
             letter-spacing: 0.3px !important;
         }
         
-        .nav-link:hover {
+        .nav-links a:hover {
             color: var(--gold) !important;
         }
         
         /* Hide mobile menu toggle on desktop */
-        .nav-toggle {
+        .menu-toggle {
             display: none !important;
         }
         
@@ -136,54 +144,25 @@
     <div class="progress-bar" id="progressBar"></div>
 
     <!-- Header -->
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">LAW FIRM</a>
-            
-            <!-- Desktop Navigation -->
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Trang Chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#capabilities" class="nav-link">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column">
-                                    <h3>Dịch Vụ Chính</h3>
-                                    <ul>
-                                        <li><a href="#capabilities">Tư Vấn & Quy Định</a></li>
-                                        <li><a href="#capabilities">Thị Trường Vốn</a></li>
-                                        <li><a href="#capabilities">Doanh Nghiệp & M&A</a></li>
-                                        <li><a href="#capabilities">Giải Quyết Tranh Chấp</a></li>
-                                        <li><a href="#capabilities">Thuế & Cấu Trúc</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#expertise" class="nav-link">Chuyên Môn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#industries" class="nav-link">Ngành</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Liên Hệ</a>
-                    </li>
+    <header>
+        <nav>
+            <div class="logo">LAW FIRM</div>
+            <div class="nav-main">
+                <ul class="nav-links">
+                    <li><a href="#home">Trang Chủ</a></li>
+                    <li><a href="#capabilities">Dịch Vụ</a></li>
+                    <li><a href="#expertise">Chuyên Môn</a></li>
+                    <li><a href="#industries">Ngành</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
                 </ul>
+                <button class="menu-toggle" onclick="toggleMegaMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-
-            <!-- Mobile menu button -->
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Mega Menu -->
     <div id="mega-menu-container"></div>
