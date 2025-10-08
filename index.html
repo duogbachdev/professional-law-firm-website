@@ -88,7 +88,19 @@
     <div id="mega-menu-container"></div>
 
     <!-- Hero Section -->
-    <div id="hero-container"></div>
+    <div id="hero-container">
+        <!-- Fallback content if JS fails -->
+        <section class="hero" id="home" style="min-height: 100vh; background: linear-gradient(135deg, #0a2540 0%, #1a4d7a 100%); display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+            <div class="hero-content">
+                <h1 style="font-size: 4.5rem; margin-bottom: 1.5rem; font-weight: 700;">Đối Tác Pháp Lý Toàn Cầu</h1>
+                <p style="font-size: 1.4rem; margin-bottom: 3rem; opacity: 0.95;">Chúng tôi cung cấp tư vấn pháp lý chuyên sâu cho các giao dịch và vụ việc phức tạp nhất trên toàn thế giới</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#contact" style="padding: 1.1rem 2.5rem; background: #d4af37; color: #0a2540; text-decoration: none; border-radius: 6px; font-weight: 600;">Liên Hệ Tư Vấn</a>
+                    <a href="#capabilities" style="padding: 1.1rem 2.5rem; background: transparent; color: white; border: 2px solid white; text-decoration: none; border-radius: 6px; font-weight: 600;">Khám Phá Dịch Vụ</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Capabilities Section -->
     <div id="capabilities-container"></div>
@@ -119,15 +131,19 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
     <!-- JavaScript Files -->
-    <script src="assets/js/components/mega-menu.js" defer></script>
-    <script src="assets/js/components/hero.js" defer></script>
-    <script src="assets/js/components/capabilities.js" defer></script>
-    <script src="assets/js/components/expertise.js" defer></script>
-    <script src="assets/js/components/industries.js" defer></script>
-    <script src="assets/js/components/stats.js" defer></script>
-    <script src="assets/js/components/contact.js" defer></script>
-    <script src="assets/js/components/footer.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script>
+        // Check if all files load properly
+        console.log('Loading JavaScript components...');
+    </script>
+    <script src="assets/js/components/mega-menu.js"></script>
+    <script src="assets/js/components/hero.js"></script>
+    <script src="assets/js/components/capabilities.js"></script>
+    <script src="assets/js/components/expertise.js"></script>
+    <script src="assets/js/components/industries.js"></script>
+    <script src="assets/js/components/stats.js"></script>
+    <script src="assets/js/components/contact.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+    <script src="assets/js/main.js"></script>
     
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
