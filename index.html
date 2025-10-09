@@ -57,6 +57,12 @@
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/images.css">
+    <link rel="stylesheet" href="assets/css/legal-services.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/people.css">
+    <link rel="stylesheet" href="assets/css/achievements.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     
     <!-- Fix header layout to match original -->
@@ -150,9 +156,10 @@
             <div class="nav-main">
                 <ul class="nav-links">
                     <li><a href="#home">Trang Chủ</a></li>
-                    <li><a href="#capabilities">Dịch Vụ</a></li>
-                    <li><a href="#expertise">Chuyên Môn</a></li>
-                    <li><a href="#industries">Ngành</a></li>
+                    <li><a href="#services">Dịch Vụ Pháp Lý</a></li>
+                    <li><a href="#about">About VNLC</a></li>
+                    <li><a href="#people">Our People</a></li>
+                    <li><a href="#achievements">Thành Tựu</a></li>
                     <li><a href="#contact">Liên Hệ</a></li>
                 </ul>
                 <button class="menu-toggle" onclick="toggleMegaMenu()">
@@ -170,14 +177,20 @@
     <!-- Hero Section -->
     <div id="hero-container"></div>
 
-    <!-- Capabilities Section -->
-    <div id="capabilities-container"></div>
+    <!-- Legal Services Section (Combined Capabilities, Expertise, Industries) -->
+    <div id="services-container"></div>
 
-    <!-- Expertise Section -->
-    <div id="expertise-container"></div>
+    <!-- About VNLC Section -->
+    <div id="about-container"></div>
 
-    <!-- Industries Section -->
-    <div id="industries-container"></div>
+    <!-- Our People Section -->
+    <div id="people-container"></div>
+
+    <!-- Achievements Section -->
+    <div id="achievements-container"></div>
+
+    <!-- Testimonials Section -->
+    <div id="testimonials-container"></div>
 
     <!-- Stats Section -->
     <div id="stats-container"></div>
@@ -202,12 +215,21 @@
     <script>
         // Check if all files load properly
         console.log('Loading JavaScript components...');
+        
+        // Debug: Check if containers exist
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, checking containers...');
+            console.log('About container:', document.getElementById('about-container'));
+            console.log('Achievements container:', document.getElementById('achievements-container'));
+        });
     </script>
     <script src="assets/js/components/mega-menu.js"></script>
     <script src="assets/js/components/hero.js"></script>
-    <script src="assets/js/components/capabilities.js"></script>
-    <script src="assets/js/components/expertise.js"></script>
-    <script src="assets/js/components/industries.js"></script>
+    <script src="assets/js/components/legal-services.js"></script>
+    <script src="assets/js/components/about.js"></script>
+    <script src="assets/js/components/people.js"></script>
+    <script src="assets/js/components/achievements.js"></script>
+    <script src="assets/js/components/testimonials.js"></script>
     <script src="assets/js/components/stats.js"></script>
     <script src="assets/js/components/contact.js"></script>
     <script src="assets/js/components/footer.js"></script>

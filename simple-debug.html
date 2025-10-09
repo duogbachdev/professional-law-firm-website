@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Debug</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { border: 1px solid #ccc; padding: 20px; margin: 10px 0; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Simple Debug Test</h1>
+    
+    <div class="container">
+        <h2>About Container</h2>
+        <div id="about-container"></div>
+    </div>
+    
+    <div class="container">
+        <h2>Achievements Container</h2>
+        <div id="achievements-container"></div>
+    </div>
+
+    <script>
+        console.log('Page loaded');
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded');
+            
+            // Test About component
+            try {
+                console.log('Testing About component...');
+                const aboutContainer = document.getElementById('about-container');
+                console.log('About container found:', aboutContainer);
+                
+                if (aboutContainer) {
+                    aboutContainer.innerHTML = '<p class="success">About container is working!</p>';
+                }
+            } catch (error) {
+                console.error('About component error:', error);
+                document.getElementById('about-container').innerHTML = '<p class="error">About component failed: ' + error.message + '</p>';
+            }
+            
+            // Test Achievements component
+            try {
+                console.log('Testing Achievements component...');
+                const achievementsContainer = document.getElementById('achievements-container');
+                console.log('Achievements container found:', achievementsContainer);
+                
+                if (achievementsContainer) {
+                    achievementsContainer.innerHTML = '<p class="success">Achievements container is working!</p>';
+                }
+            } catch (error) {
+                console.error('Achievements component error:', error);
+                document.getElementById('achievements-container').innerHTML = '<p class="error">Achievements component failed: ' + error.message + '</p>';
+            }
+        });
+    </script>
+</body>
+</html>

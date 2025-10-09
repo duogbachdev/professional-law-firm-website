@@ -1,0 +1,231 @@
+/* Legal Services Section Styles */
+.legal-services {
+    padding: 100px 0;
+    background: var(--light-gray);
+}
+
+.legal-services .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.services-section {
+    margin-bottom: 80px;
+}
+
+.subsection-title {
+    font-size: 2.2rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.enhanced-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(10, 37, 64, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.enhanced-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--light-gold));
+}
+
+.enhanced-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(10, 37, 64, 0.15);
+}
+
+.capability-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.enhanced-card h4 {
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    padding: 8px 0;
+    color: var(--dark-gray);
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* Specialized Grid */
+.specialized-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.specialized-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(10, 37, 64, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.specialized-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(10, 37, 64, 0.12);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--gold), var(--light-gold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.specialized-card h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.category-services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-services li {
+    padding: 5px 0;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+}
+
+/* Industries Showcase */
+.industries-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.industry-highlight {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(10, 37, 64, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.industry-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(10, 37, 64, 0.12);
+}
+
+.industry-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.industry-highlight h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.industry-highlight p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .legal-services {
+        padding: 60px 0;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .specialized-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .industries-showcase {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .subsection-title {
+        font-size: 1.8rem;
+    }
+    
+    .enhanced-card {
+        padding: 25px;
+    }
+}

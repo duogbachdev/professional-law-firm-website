@@ -1,0 +1,435 @@
+/* Achievements Section Styles */
+.achievements {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--navy), rgba(10, 37, 64, 0.9));
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.achievements-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.achievement-category {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.achievement-category.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.category-title {
+    font-size: 2.2rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--gold), var(--light-gold));
+    color: var(--navy);
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.achievement-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 12px;
+}
+
+.achievement-detail {
+    font-size: 1rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.achievement-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Business Metrics */
+.business-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.metric-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.metric-label {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.metric-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+/* Featured Projects */
+.featured-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-card h4 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.tag {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--gold);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Social Contributions */
+.social-contributions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.contribution-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.contribution-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.contribution-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contribution-item h4 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contribution-item p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Milestone Timeline */
+.milestone-timeline {
+    margin-top: 60px;
+}
+
+.achievements .timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.achievements .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--gold), var(--light-gold));
+    transform: translateX(-50%);
+}
+
+.achievements .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.achievements .timeline-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.achievements .timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.achievements .timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.achievements .timeline-year {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.achievements .timeline-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 0 30px;
+    max-width: 400px;
+}
+
+.achievements .timeline-content h4 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.achievements .timeline-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.milestone-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.milestone-stat {
+    background: rgba(212, 175, 55, 0.2);
+    color: var(--white);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .achievements .timeline::before {
+        left: 30px;
+    }
+    
+    .achievements .timeline-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+    }
+    
+    .achievements .timeline-year {
+        position: absolute;
+        left: -50px;
+        min-width: 80px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .achievements .timeline-content {
+        margin: 0;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements {
+        padding: 60px 0;
+    }
+    
+    .achievements-showcase {
+        gap: 60px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .business-metrics {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .featured-projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .social-contributions {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .achievements .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .achievements .timeline-year {
+        left: -40px;
+        min-width: 70px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .category-title {
+        font-size: 1.8rem;
+    }
+    
+    .metric-number {
+        font-size: 2.5rem;
+    }
+}

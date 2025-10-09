@@ -1,0 +1,366 @@
+/* About VNLC Section Styles */
+.about-vnlc {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.about-vnlc .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.about-text {
+    padding-right: 40px;
+}
+
+.lead-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.feature-content h4 {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.about-visual {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.05), rgba(212, 175, 55, 0.05));
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.about-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--gold), var(--light-gold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 30px;
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.about-visual h3 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.about-visual p {
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Timeline Section */
+.timeline-section {
+    margin-bottom: 80px;
+}
+
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--gold), var(--light-gold));
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.timeline-content {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(10, 37, 64, 0.08);
+    margin: 0 30px;
+    max-width: 400px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.timeline-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.detail-tag {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--navy);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Awards Section */
+.awards-section {
+    margin-bottom: 80px;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.award-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(10, 37, 64, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    transition: all 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(10, 37, 64, 0.15);
+}
+
+.award-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.award-item h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.award-organization {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.award-description {
+    color: var(--dark-gray);
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.award-criteria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.criteria-tag {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--navy);
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Animation Classes */
+.timeline-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.timeline-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.award-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.award-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-text {
+        padding-right: 0;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+    }
+    
+    .timeline-year {
+        position: absolute;
+        left: -50px;
+        min-width: 80px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        margin: 0;
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-vnlc {
+        padding: 60px 0;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline-year {
+        left: -40px;
+        min-width: 70px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .awards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
