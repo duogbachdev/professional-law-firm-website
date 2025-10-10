@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Check</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/achievements.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .check-section { 
+            background: white; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+            border: 2px solid #ddd;
+        }
+        .content-preview {
+            max-height: 300px;
+            overflow: auto;
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Content Check</h1>
+    
+    <div class="check-section">
+        <h2>About Container Content</h2>
+        <div id="about-container"></div>
+        <div class="content-preview" id="about-preview"></div>
+    </div>
+    
+    <div class="check-section">
+        <h2>Achievements Container Content</h2>
+        <div id="achievements-container"></div>
+        <div class="content-preview" id="achievements-preview"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded - checking content...');
+            
+            // Load components
+            setTimeout(() => {
+                const aboutContainer = document.getElementById('about-container');
+                const achievementsContainer = document.getElementById('achievements-container');
+                
+                // Show content preview
+                document.getElementById('about-preview').innerHTML = 
+                    '<strong>About HTML Length:</strong> ' + aboutContainer.innerHTML.length + ' characters<br>' +
+                    '<strong>Preview:</strong> ' + aboutContainer.innerHTML.substring(0, 200) + '...';
+                
+                document.getElementById('achievements-preview').innerHTML = 
+                    '<strong>Achievements HTML Length:</strong> ' + achievementsContainer.innerHTML.length + ' characters<br>' +
+                    '<strong>Preview:</strong> ' + achievementsContainer.innerHTML.substring(0, 200) + '...';
+                
+                console.log('About container HTML length:', aboutContainer.innerHTML.length);
+                console.log('Achievements container HTML length:', achievementsContainer.innerHTML.length);
+                
+                // Check specific sections
+                const awardsSection = aboutContainer.querySelector('.awards-section');
+                const milestonesSection = achievementsContainer.querySelector('.milestone-timeline');
+                
+                console.log('Awards section found:', awardsSection ? 'YES' : 'NO');
+                console.log('Milestones section found:', milestonesSection ? 'YES' : 'NO');
+                
+                if (awardsSection) {
+                    console.log('Awards section HTML:', awardsSection.innerHTML.substring(0, 100));
+                }
+                
+                if (milestonesSection) {
+                    console.log('Milestones section HTML:', milestonesSection.innerHTML.substring(0, 100));
+                }
+            }, 500);
+        });
+    </script>
+
+    <!-- Load Components -->
+    <script src="assets/js/components/about.js"></script>
+    <script src="assets/js/components/achievements.js"></script>
+</body>
+</html>
+

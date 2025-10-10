@@ -239,3 +239,4 @@ class Testimonials {
 document.addEventListener('DOMContentLoaded', () => {
     new Testimonials();
 });
+

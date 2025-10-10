@@ -29,7 +29,7 @@ class Achievements {
 
                     <!-- Key Achievements -->
                     <div class="achievements-showcase">
-                        <div class="achievement-category">
+                        <div class="achievement-category animate-in">
                             <h3 class="category-title">Giải Thưởng & Công Nhận</h3>
                             <div class="achievements-grid">
                                 <div class="achievement-card">
@@ -70,7 +70,7 @@ class Achievements {
                             </div>
                         </div>
 
-                        <div class="achievement-category">
+                        <div class="achievement-category animate-in">
                             <h3 class="category-title">Thành Tích Kinh Doanh</h3>
                             <div class="business-metrics">
                                 <div class="metric-card">
@@ -99,7 +99,7 @@ class Achievements {
                             </div>
                         </div>
 
-                        <div class="achievement-category">
+                        <div class="achievement-category animate-in">
                             <h3 class="category-title">Dự Án Tiêu Biểu</h3>
                             <div class="featured-projects">
                                 <div class="project-card">
@@ -148,7 +148,7 @@ class Achievements {
                             </div>
                         </div>
 
-                        <div class="achievement-category">
+                        <div class="achievement-category animate-in">
                             <h3 class="category-title">Đóng Góp Xã Hội</h3>
                             <div class="social-contributions">
                                 <div class="contribution-item">

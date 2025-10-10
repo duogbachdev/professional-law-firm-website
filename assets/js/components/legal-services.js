@@ -250,3 +250,4 @@ class LegalServices {
 document.addEventListener('DOMContentLoaded', () => {
     new LegalServices();
 });
+

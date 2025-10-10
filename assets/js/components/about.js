@@ -205,7 +205,7 @@ class AboutVNLC {
                     <div class="awards-section">
                         <h3 class="subsection-title">Giải Thưởng & Công Nhận</h3>
                         <div class="awards-grid">
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🏆</div>
                                 <h4>Top 5 Công Ty Luật Việt Nam</h4>
                                 <p class="award-organization">Asian Legal Business 2023</p>
@@ -217,7 +217,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">⭐</div>
                                 <h4>Luật Sư Xuất Sắc của Năm</h4>
                                 <p class="award-organization">Vietnam Bar Association 2022</p>
@@ -229,7 +229,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🎖️</div>
                                 <h4>Dịch Vụ Khách Hàng Tốt Nhất</h4>
                                 <p class="award-organization">Legal 500 Asia Pacific 2023</p>
@@ -241,7 +241,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🥇</div>
                                 <h4>Deal of the Year - M&A</h4>
                                 <p class="award-organization">Vietnam M&A Awards 2022</p>
@@ -253,7 +253,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">💡</div>
                                 <h4>Innovation in Legal Services</h4>
                                 <p class="award-organization">Vietnam Legal Tech Awards 2023</p>
@@ -265,7 +265,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🌍</div>
                                 <h4>Best Cross-border Practice</h4>
                                 <p class="award-organization">Chambers Asia Pacific 2023</p>
@@ -277,7 +277,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🏛️</div>
                                 <h4>Best Litigation Practice</h4>
                                 <p class="award-organization">IFLR Asia Awards 2022</p>
@@ -289,7 +289,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">📚</div>
                                 <h4>Best Training Program</h4>
                                 <p class="award-organization">Vietnam Legal Education Awards 2023</p>
@@ -301,7 +301,7 @@ class AboutVNLC {
                                 </div>
                             </div>
                             
-                            <div class="award-item">
+                            <div class="award-item animate-in">
                                 <div class="award-icon">🤝</div>
                                 <h4>Corporate Social Responsibility</h4>
                                 <p class="award-organization">Vietnam CSR Awards 2022</p>

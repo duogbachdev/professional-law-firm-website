@@ -230,3 +230,4 @@ class OurPeople {
 document.addEventListener('DOMContentLoaded', () => {
     new OurPeople();
 });
+
