@@ -68,3 +68,47 @@
     font-size: 0.9rem;
     line-height: 1.5;
 }
+
+/* Mobile Navigation Links */
+.mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 1rem 0;
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #e5e7eb;
+    transition: all 0.3s;
+}
+
+.mobile-nav-link:hover {
+    color: var(--gold);
+    padding-left: 1rem;
+}
+
+/* Desktop Mega Menu Content */
+.mega-menu-desktop-content {
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .mobile-nav-links {
+        display: flex;
+    }
+    
+    .mega-menu-desktop-content {
+        display: none;
+    }
+    
+    .mega-menu-overlay {
+        padding: 80px 5% 50px;
+    }
+}

@@ -1,59 +1,63 @@
 /* Header & Navigation */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-    z-index: 1000;
-    transition: all 0.3s ease;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.08) !important;
+    z-index: 1000 !important;
+    transition: all 0.3s ease !important;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 5%;
-    max-width: 1600px;
-    margin: 0 auto;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 1.2rem 5% !important;
+    max-width: 1600px !important;
+    margin: 0 auto !important;
 }
 
 .logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--navy);
-    letter-spacing: -0.5px;
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: var(--navy) !important;
+    text-decoration: none !important;
+    letter-spacing: -0.5px !important;
 }
 
 .nav-main {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
+    display: flex !important;
+    gap: 3rem !important;
+    align-items: center !important;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-    align-items: center;
+    display: flex !important;
+    gap: 2.5rem !important;
+    list-style: none !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .nav-links > li {
-    position: relative;
+    position: relative !important;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--navy);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-    letter-spacing: 0.3px;
+    text-decoration: none !important;
+    color: var(--navy) !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+    transition: color 0.3s !important;
+    letter-spacing: 0.3px !important;
 }
 
 .nav-links a:hover {
-    color: var(--gold);
+    color: var(--gold) !important;
 }
 
 /* Hamburger Menu Button */
@@ -91,4 +95,36 @@ nav {
 
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mega Menu Visibility */
+#mega-menu-container {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    #mega-menu-container {
+        display: none !important;
+    }
+}
+
+/* Mobile responsive - hide nav links and show menu toggle */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none !important;
+    }
+    
+    .menu-toggle {
+        display: flex !important;
+    }
+    
+    /* Show mega menu on mobile */
+    #mega-menu-container {
+        display: block !important;
+    }
+}
+
+/* Body padding for fixed header */
+body {
+    padding-top: 80px !important;
 }
