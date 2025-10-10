@@ -6,7 +6,7 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://lawfirm.vn/</loc>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,28 +14,35 @@
 
     <!-- Main sections -->
     <url>
-        <loc>https://lawfirm.vn/#capabilities</loc>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/#services</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://lawfirm.vn/#expertise</loc>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/#about</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://lawfirm.vn/#industries</loc>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/#people</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://lawfirm.vn/#contact</loc>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/#achievements</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/#contact</loc>
         <lastmod>2025-01-27</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
