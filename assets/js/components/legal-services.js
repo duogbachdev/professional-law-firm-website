@@ -40,6 +40,19 @@ class LegalServices {
 
                             <div class="enhanced-card">
                                 <div class="capability-number">02</div>
+                                <h4>Tranh Tụng</h4>
+                                <ul class="service-list">
+                                    <li>Trọng tài quốc tế</li>
+                                    <li>Tranh tụng thương mại</li>
+                                    <li>Tranh chấp M&A</li>
+                                    <li>Tranh tụng dịch vụ tài chính</li>
+                                    <li>Tranh tụng chứng khoán</li>
+                                    <li>Phòng chống tội phạm kinh tế</li>
+                                </ul>
+                            </div>
+
+                            <div class="enhanced-card">
+                                <div class="capability-number">03</div>
                                 <h4>Thị Trường Vốn</h4>
                                 <ul class="service-list">
                                     <li>Tài chính tài sản</li>
@@ -52,7 +65,7 @@ class LegalServices {
                             </div>
 
                             <div class="enhanced-card">
-                                <div class="capability-number">03</div>
+                                <div class="capability-number">04</div>
                                 <h4>Doanh Nghiệp & M&A</h4>
                                 <ul class="service-list">
                                     <li>Sáp nhập và mua bán</li>
@@ -61,19 +74,6 @@ class LegalServices {
                                     <li>Quản trị công ty đại chúng</li>
                                     <li>Đầu tư nước ngoài</li>
                                     <li>Giao dịch công nghệ</li>
-                                </ul>
-                            </div>
-
-                            <div class="enhanced-card">
-                                <div class="capability-number">04</div>
-                                <h4>Tranh Tụng</h4>
-                                <ul class="service-list">
-                                    <li>Trọng tài quốc tế</li>
-                                    <li>Tranh tụng thương mại</li>
-                                    <li>Tranh chấp M&A</li>
-                                    <li>Tranh tụng dịch vụ tài chính</li>
-                                    <li>Tranh tụng chứng khoán</li>
-                                    <li>Phòng chống tội phạm kinh tế</li>
                                 </ul>
                             </div>
 
