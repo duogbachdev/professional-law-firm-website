@@ -27,7 +27,7 @@ class LegalServices {
                         <div class="services-grid">
                             <div class="enhanced-card">
                                 <div class="capability-number">01</div>
-                                <h4>Tư Vấn & Quy Định</h4>
+                                <h4>Tư Vấn</h4>
                                 <ul class="service-list">
                                     <li>Luật hành chính và công</li>
                                     <li>Cạnh tranh và chống độc quyền</li>
@@ -42,31 +42,18 @@ class LegalServices {
                                 <div class="capability-number">02</div>
                                 <h4>Tranh Tụng</h4>
                                 <ul class="service-list">
+                                    <li>Dân sự</li>
+                                    <li>Hình sự</li>
+                                    <li>Kinh doanh thương mại</li>
+                                    <li>Đất đai</li>
+                                    <li>Hôn nhân</li>
                                     <li>Trọng tài quốc tế</li>
-                                    <li>Tranh tụng thương mại</li>
-                                    <li>Tranh chấp M&A</li>
-                                    <li>Tranh tụng dịch vụ tài chính</li>
-                                    <li>Tranh tụng chứng khoán</li>
-                                    <li>Phòng chống tội phạm kinh tế</li>
                                 </ul>
                             </div>
 
                             <div class="enhanced-card">
                                 <div class="capability-number">03</div>
-                                <h4>Thị Trường Vốn</h4>
-                                <ul class="service-list">
-                                    <li>Tài chính tài sản</li>
-                                    <li>Thị trường nợ</li>
-                                    <li>Công cụ phái sinh</li>
-                                    <li>Thị trường vốn cổ phần</li>
-                                    <li>Tài chính bền vững</li>
-                                    <li>Tài chính có cấu trúc</li>
-                                </ul>
-                            </div>
-
-                            <div class="enhanced-card">
-                                <div class="capability-number">04</div>
-                                <h4>Doanh Nghiệp & M&A</h4>
+                                <h4>Doanh Nghiệp M&A</h4>
                                 <ul class="service-list">
                                     <li>Sáp nhập và mua bán</li>
                                     <li>Liên doanh</li>
@@ -78,15 +65,28 @@ class LegalServices {
                             </div>
 
                             <div class="enhanced-card">
-                                <div class="capability-number">05</div>
-                                <h4>Tài Chính</h4>
+                                <div class="capability-number">04</div>
+                                <h4>Thu Hồi Công Nợ</h4>
                                 <ul class="service-list">
-                                    <li>Cho vay có cấu trúc</li>
-                                    <li>Tài chính đòn bẩy</li>
-                                    <li>Tài chính dự án</li>
-                                    <li>Bất động sản</li>
-                                    <li>Tái cấu trúc và phá sản</li>
-                                    <li>Tài chính thương mại</li>
+                                    <li>Đòi nợ dân sự</li>
+                                    <li>Đòi nợ thương mại</li>
+                                    <li>Phá sản và thanh lý</li>
+                                    <li>Thi hành án dân sự</li>
+                                    <li>Đàm phán và hòa giải</li>
+                                    <li>Khởi kiện và tố tụng</li>
+                                </ul>
+                            </div>
+
+                            <div class="enhanced-card">
+                                <div class="capability-number">05</div>
+                                <h4>Sở Hữu Trí Tuệ</h4>
+                                <ul class="service-list">
+                                    <li>Đăng ký thương hiệu</li>
+                                    <li>Bảo hộ sáng chế</li>
+                                    <li>Bản quyền tác giả</li>
+                                    <li>Bí mật thương mại</li>
+                                    <li>Tranh chấp IP</li>
+                                    <li>Chuyển giao công nghệ</li>
                                 </ul>
                             </div>
                         </div>
