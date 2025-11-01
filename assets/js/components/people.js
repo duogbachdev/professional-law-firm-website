@@ -23,47 +23,57 @@ class OurPeople {
 
                     <!-- Leadership Team -->
                     <div class="team-section">
-                        <h3 class="subsection-title">Ban Lãnh Đạo</h3>
+                        <h3 class="subsection-title">Đội Ngũ Chuyên Gia</h3>
                         <div class="leadership-grid">
                             <div class="team-member">
-                                <div class="team-avatar">NH</div>
-                                <h4>Nguyễn Văn Hùng</h4>
-                                <p class="position">Managing Partner</p>
-                                <p class="specialization">Luật Doanh nghiệp & M&A</p>
+                                <div class="team-avatar">PQ</div>
+                                <h4>TS. Nguyễn Thị Quý Phương</h4>
+                                <p class="position">Cố Vấn Cấp Cao</p>
+                                <p class="specialization">Nguyên Giám đốc PVF, Ủy viên FIA</p>
                                 <div class="member-experience">
-                                    <span class="experience-badge">20+ năm kinh nghiệm</span>
+                                    <span class="experience-badge">Chuyên gia cấp cao</span>
                                 </div>
                                 <div class="member-credentials">
-                                    <span class="credential">LL.M Harvard Law School</span>
-                                    <span class="credential">Ph.D Economics</span>
+                                    <span class="credential">Từng giữ nhiều vị trí cao tại Vingroup</span>
                                 </div>
                             </div>
 
                             <div class="team-member">
-                                <div class="team-avatar">TL</div>
-                                <h4>Trần Thị Lan</h4>
-                                <p class="position">Senior Partner</p>
-                                <p class="specialization">Tranh tụng & Trọng tài</p>
+                                <div class="team-avatar">VH</div>
+                                <h4>TS. Vũ Đình Hoàng</h4>
+                                <p class="position">Chuyên Gia Pháp Lý</p>
+                                <p class="specialization">Hình sự & Chính sách công</p>
                                 <div class="member-experience">
-                                    <span class="experience-badge">18+ năm kinh nghiệm</span>
+                                    <span class="experience-badge">Chuyên gia hàng đầu</span>
                                 </div>
                                 <div class="member-credentials">
-                                    <span class="credential">LL.M Cambridge</span>
-                                    <span class="credential">Arbitrator CIETAC</span>
+                                    <span class="credential">Công tác tại Văn phòng Chính phủ</span>
                                 </div>
                             </div>
 
                             <div class="team-member">
-                                <div class="team-avatar">LM</div>
-                                <h4>Lê Minh</h4>
-                                <p class="position">Partner</p>
-                                <p class="specialization">Thị trường vốn & Tài chính</p>
+                                <div class="team-avatar">PT</div>
+                                <h4>Ông Phạm Thanh Tuấn</h4>
+                                <p class="position">Giám Đốc VNLC</p>
+                                <p class="specialization">Chuyên gia pháp lý tài chính – tín dụng</p>
                                 <div class="member-experience">
-                                    <span class="experience-badge">15+ năm kinh nghiệm</span>
+                                    <span class="experience-badge">10+ năm kinh nghiệm</span>
                                 </div>
                                 <div class="member-credentials">
-                                    <span class="credential">CFA Charterholder</span>
-                                    <span class="credential">LL.M NYU</span>
+                                    <span class="credential">Chuyên môn sâu về tài chính & tín dụng</span>
+                                </div>
+                            </div>
+
+                            <div class="team-member">
+                                <div class="team-avatar">TN</div>
+                                <h4>Luật Sư Trần Trọng Nam</h4>
+                                <p class="position">Thạc Sĩ Luật Học</p>
+                                <p class="specialization">Doanh nghiệp & Dân sự</p>
+                                <div class="member-experience">
+                                    <span class="experience-badge">Chuyên gia hàng đầu</span>
+                                </div>
+                                <div class="member-credentials">
+                                    <span class="credential">Nguyên Trưởng phòng Pháp chế Techcombank</span>
                                 </div>
                             </div>
                         </div>

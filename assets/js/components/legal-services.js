@@ -92,104 +92,197 @@ class LegalServices {
                         </div>
                     </div>
 
-                    <!-- Specialized Legal Areas -->
+                    <!-- Pricing Table -->
                     <div class="services-section">
-                        <h3 class="subsection-title">Chuyên Môn Chi Tiết</h3>
-                        <div class="specialized-grid">
-                            <div class="specialized-card">
-                                <div class="category-icon">⚖️</div>
-                                <h4>Luật Dân Sự</h4>
-                                <ul class="category-services">
-                                    <li>Tranh chấp hợp đồng</li>
-                                    <li>Bồi thường thiệt hại</li>
-                                    <li>Quyền sở hữu và tài sản</li>
-                                    <li>Thừa kế và di chúc</li>
-                                    <li>Quan hệ gia đình</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">🏢</div>
-                                <h4>Luật Doanh Nghiệp</h4>
-                                <ul class="category-services">
-                                    <li>Thành lập doanh nghiệp</li>
-                                    <li>Quản trị công ty</li>
-                                    <li>Hợp đồng thương mại</li>
-                                    <li>Tuân thủ doanh nghiệp</li>
-                                    <li>Giải thể và thanh lý</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">👨‍⚖️</div>
-                                <h4>Luật Hình Sự</h4>
-                                <ul class="category-services">
-                                    <li>Bảo vệ quyền bị can/bị cáo</li>
-                                    <li>Đại diện bị hại</li>
-                                    <li>Tội phạm kinh tế</li>
-                                    <li>Tội phạm công nghệ</li>
-                                    <li>Kháng cáo và tái thẩm</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">💡</div>
-                                <h4>Sở Hữu Trí Tuệ</h4>
-                                <ul class="category-services">
-                                    <li>Đăng ký thương hiệu</li>
-                                    <li>Bảo hộ sáng chế</li>
-                                    <li>Bản quyền tác giả</li>
-                                    <li>Bí mật thương mại</li>
-                                    <li>Tranh chấp IP</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">🏠</div>
-                                <h4>Luật Bất Động Sản</h4>
-                                <ul class="category-services">
-                                    <li>Mua bán BĐS</li>
-                                    <li>Cho thuê và chuyển nhượng</li>
-                                    <li>Phát triển dự án</li>
-                                    <li>Quyền sử dụng đất</li>
-                                    <li>Tranh chấp BĐS</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">👥</div>
-                                <h4>Luật Lao Động</h4>
-                                <ul class="category-services">
-                                    <li>Hợp đồng lao động</li>
-                                    <li>Tranh chấp lao động</li>
-                                    <li>Chính sách nhân sự</li>
-                                    <li>Bảo hiểm xã hội</li>
-                                    <li>Thôi việc và sa thải</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">🌐</div>
-                                <h4>Luật Công Nghệ</h4>
-                                <ul class="category-services">
-                                    <li>Hợp đồng phần mềm</li>
-                                    <li>E-commerce</li>
-                                    <li>Fintech và Blockchain</li>
-                                    <li>Trí tuệ nhân tạo</li>
-                                    <li>Bảo mật dữ liệu</li>
-                                </ul>
-                            </div>
-
-                            <div class="specialized-card">
-                                <div class="category-icon">💰</div>
-                                <h4>Luật Thuế</h4>
-                                <ul class="category-services">
-                                    <li>Kế hoạch thuế</li>
-                                    <li>Tuân thủ thuế</li>
-                                    <li>Tranh chấp thuế</li>
-                                    <li>Thuế doanh nghiệp</li>
-                                    <li>Chuyển giá</li>
-                                </ul>
+                        <h3 class="subsection-title">Bảng Giá Dịch Vụ</h3>
+                        <div class="pricing-table-container">
+                            <table class="pricing-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nhóm Dịch Vụ</th>
+                                        <th>Dịch Vụ Cụ Thể</th>
+                                        <th>Công Tác Phí</th>
+                                        <th>Thù Lao</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="6"><strong>Thu hồi công nợ</strong></td>
+                                        <td>1. Tư vấn, soạn thảo hồ sơ đối chiếu công nợ</td>
+                                        <td>3.000.000 – 5.000.000 VNĐ<br>(Dưới 200tr: 3tr; Từ 200-500tr: 4tr; Trên 500tr: 5tr)</td>
+                                        <td>Không</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Đại diện Quý khách hàng làm việc, trao đổi, thương lượng, đàm phán, hòa giải (không quá 03 buổi làm việc)</td>
+                                        <td>6.000.000 – 10.000.000 VNĐ<br>(Thêm 3.000.000/lượt phát sinh)<br>(Dưới 200tr: 6tr; Từ 200-500tr: 8tr; Trên 500tr: 10tr)</td>
+                                        <td>10-35% giá trị tài sản thu hồi<br>(tùy theo tính chất vụ việc và thỏa thuận)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Soạn thảo văn bản, hồ sơ khởi kiện tại Tòa án nhân dân có thẩm quyền</td>
+                                        <td>3.000.000 – 5.000.000 VNĐ<br>(Dưới 200tr: 3tr; Từ 200-500tr: 4tr; Trên 500tr: 5tr)</td>
+                                        <td>10-35% giá trị tài sản thu hồi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Đại diện Quý khách hàng tham gia giải quyết tranh chấp tại Tòa án nhân dân có thẩm quyền</td>
+                                        <td>20.000.000 - 50.000.000 VNĐ<br>(Dưới 200tr: 20tr; Từ 200-500tr: 35tr; Trên 500tr: 50tr)</td>
+                                        <td>10-35% giá trị tài sản thu hồi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Hỗ trợ Quý khách hàng trong quá trình thi hành án ngay sau khi có bản án</td>
+                                        <td>10.000.000 - 20.000.000 VNĐ<br>(Dưới 200tr: 10tr; Từ 200-500tr: 15tr; Trên 500tr: 20tr)</td>
+                                        <td>10-35% giá trị tài sản thu hồi</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Ưu đãi: Sử dụng toàn bộ hạng mục công việc từ 1 đến 5</strong></td>
+                                        <td>35.000.000 - 70.000.000 VNĐ<br>(Dưới 200tr: 35tr; Từ 200-500tr: 50tr; Trên 500tr: 70tr)</td>
+                                        <td>10-35% giá trị tài sản thu hồi</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5"><strong>Tư vấn Hợp đồng thương mại<br>(không có yếu tố nước ngoài)</strong></td>
+                                        <td>1. Đàm phán trước khi giao kết hợp đồng</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ<br>(Tùy theo giá trị hợp đồng)</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Soạn thảo các hợp đồng/phụ lục giữa doanh nghiệp với khách hàng/đối tác</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ<br>(Tùy theo giá trị hợp đồng)</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Kiểm tra/rà soát, sửa đổi, bổ sung, giải thích hợp đồng</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ<br>(Tùy theo giá trị hợp đồng)</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Hướng dẫn, khuyến cáo các bên thực hiện đúng quy định của hợp đồng</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ<br>(Tùy theo giá trị hợp đồng)</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Chấm dứt/hủy bỏ/thanh lý/tạm đình chỉ/đình chỉ hợp đồng</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ<br>(Tùy theo giá trị hợp đồng)</td>
+                                        <td>2.000.000 - 16.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5"><strong>Tư vấn pháp lý về bất động sản<br>(nhà ở thổ cư giá trị dưới 20 tỷ)</strong></td>
+                                        <td>1. Đánh giá pháp lý của bất động sản, kiểm tra quy hoạch, tranh chấp, thế chấp ngân hàng, kê biên, phong tỏa</td>
+                                        <td>1.000.000 - 3.000.000 VNĐ<br>(Tùy thuộc vào tính chất của BĐS)</td>
+                                        <td>1.000.000 - 3.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Hỗ trợ Quý khách hàng thương lượng, đàm phán trước khi tiến hành chuyển nhượng/nhận chuyển nhượng quyền sử dụng đất</td>
+                                        <td>2.000.000 - 3.000.000 VNĐ</td>
+                                        <td>2.000.000 - 3.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Soạn thảo các văn bản pháp lý cơ bản, ghi nhận quyền và nghĩa vụ giữa các bên</td>
+                                        <td>3.000.000 - 5.000.000 VNĐ<br>(Không bao gồm phí công chứng, chứng thực)</td>
+                                        <td>3.000.000 - 5.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Hướng dẫn các bên thực hiện đúng hợp đồng, đảm bảo quyền và lợi ích hợp pháp</td>
+                                        <td>500.000 - 1.000.000 VNĐ/1 buổi làm việc<br>(mỗi buổi không quá 2 tiếng)</td>
+                                        <td>500.000 - 1.000.000 VNĐ/1 buổi</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td><strong>Ưu đãi: Thực hiện các công việc từ mục 1 đến mục 4</strong></td>
+                                        <td>5.000.000 - 10.000.000 VNĐ</td>
+                                        <td>5.000.000 - 10.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5"><strong>Sở hữu trí tuệ</strong></td>
+                                        <td>1. Thiết lập quy trình và giải pháp bảo vệ bí mật kinh doanh</td>
+                                        <td>20.000.000 – 40.000.000 VNĐ<br>(Có thể cao hơn tùy vào cấp độ bảo mật)</td>
+                                        <td>20.000.000 – 40.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Đăng ký quyền tác giả/đăng ký nhãn hiệu</td>
+                                        <td>2.500.000 VNĐ/hồ sơ<br>(Chưa bao gồm phí, lệ phí nộp cho cơ quan Nhà nước)</td>
+                                        <td>2.500.000 VNĐ/hồ sơ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Thực hiện các biện pháp theo quy định của pháp luật để ngăn chặn xâm phạm quyền sở hữu trí tuệ (cảnh báo, khiếu nại)</td>
+                                        <td>10.000.000 – 20.000.000 VNĐ<br>(Có thể tăng giảm tùy thuộc vào tính chất của vụ việc)</td>
+                                        <td>10.000.000 – 20.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Tư vấn, tham gia bảo vệ quyền lợi cho Quý khách trong vụ án tranh chấp về sở hữu trí tuệ tại Tòa án nhân dân có thẩm quyền</td>
+                                        <td>20.000.000 – 40.000.000 VNĐ<br>(Có thể tăng giảm tùy thuộc vào tính chất của vụ việc)</td>
+                                        <td>20.000.000 – 40.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5. Hợp đồng chuyển nhượng nhãn hiệu/sáng chế/kiểu dáng công nghiệp/quyền tác giả/quyền liên quan/quyền đối với giống cây trồng</td>
+                                        <td>10.000.000 – 20.000.000 VNĐ<br>(Có thể cao hơn tùy vào tính chất của đối tượng chuyển nhượng)</td>
+                                        <td>10.000.000 – 20.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4"><strong>Thừa kế</strong></td>
+                                        <td>1. Tư vấn di chúc, di sản thừa kế, quyền thừa kế</td>
+                                        <td>3.000.000 - 10.000.000 VNĐ<br>(Mức giá có thể thay đổi tùy thuộc vào số lượng và tính chất tài sản)</td>
+                                        <td>3.000.000 - 10.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Tư vấn lập di chúc theo đúng quy định pháp luật</td>
+                                        <td>3.000.000 - 10.000.000 VNĐ</td>
+                                        <td>3.000.000 - 10.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Xác định hiệu lực di chúc; Đại diện khai nhận di sản thừa kế theo di chúc</td>
+                                        <td>10.000.000 - 15.000.000 VNĐ/hồ sơ<br>(Chưa bao gồm phí công chứng, chứng thực)</td>
+                                        <td>10.000.000 - 15.000.000 VNĐ/hồ sơ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Thừa kế theo pháp luật: Xác định di sản, những người trong hàng thừa kế</td>
+                                        <td>10.000.000 - 20.000.000 VNĐ/hồ sơ<br>(Chưa bao gồm phí công chứng, chứng thực)</td>
+                                        <td>10.000.000 - 20.000.000 VNĐ/hồ sơ</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><strong>Hôn nhân - Gia đình</strong></td>
+                                        <td>1. Thuận tình ly hôn</td>
+                                        <td>8.000.000 - 15.000.000 VNĐ</td>
+                                        <td>8.000.000 - 15.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Ly hôn tranh chấp</td>
+                                        <td>20.000.000 - 40.000.000 VNĐ</td>
+                                        <td>10-20% giá trị tài sản</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4"><strong>Doanh nghiệp</strong></td>
+                                        <td>1. Thành lập doanh nghiệp</td>
+                                        <td>3.000.000 VNĐ<br>(Bao gồm lệ phí, con dấu, tài khoản, chữ ký số)</td>
+                                        <td>3.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Biểu mẫu doanh nghiệp</td>
+                                        <td>1.000.000 - 2.000.000 VNĐ</td>
+                                        <td>1.000.000 - 2.000.000 VNĐ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Tư vấn cơ cấu, quy trình, quy chế</td>
+                                        <td>2.000.000 - 5.000.000 VNĐ/buổi<br>(Mỗi buổi không quá 2 tiếng)</td>
+                                        <td>2.000.000 - 5.000.000 VNĐ/buổi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4. Tư vấn thường xuyên (Gói doanh nghiệp)</td>
+                                        <td>6.000.000 - 20.000.000 VNĐ/tháng<br>(Giảm 10-20% nếu ký theo quý/năm)</td>
+                                        <td>6.000.000 - 20.000.000 VNĐ/tháng</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><strong>Đất đai & Giấy phép</strong></td>
+                                        <td>1. Cấp sổ đỏ lần đầu</td>
+                                        <td>3.000.000 - 5.000.000 VNĐ<br>+ Thương lượng theo BĐS</td>
+                                        <td>3.000.000 - 5.000.000 VNĐ + thương lượng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2. Giấy phép an toàn thực phẩm</td>
+                                        <td>9.000.000 - 12.000.000 VNĐ/hồ sơ<br>(Đã bao gồm lệ phí)</td>
+                                        <td>9.000.000 - 12.000.000 VNĐ/hồ sơ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pricing-note">
+                                <p><strong>Lưu ý:</strong> Giá trên có thể thay đổi tùy thuộc vào tính chất cụ thể của từng vụ việc và thỏa thuận giữa các bên. Vui lòng liên hệ trực tiếp để nhận báo giá chi tiết.</p>
                             </div>
                         </div>
                     </div>

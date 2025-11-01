@@ -30,119 +30,122 @@ class Achievements {
                     <!-- Key Achievements -->
                     <div class="achievements-showcase">
                         <div class="achievement-category animate-in">
-                            <h3 class="category-title">Giải Thưởng & Công Nhận</h3>
-                            <div class="achievements-grid">
-                                <div class="achievement-card">
-                                    <div class="achievement-badge">
-                                        <div class="achievement-icon">🥇</div>
-                                        <span>Top 5 Công Ty Luật Việt Nam</span>
-                                    </div>
-                                    <p class="achievement-detail">Asian Legal Business 2023</p>
-                                    <p class="achievement-description">Được công nhận là một trong những công ty luật hàng đầu Việt Nam</p>
-                                </div>
-
-                                <div class="achievement-card">
-                                    <div class="achievement-badge">
-                                        <div class="achievement-icon">⭐</div>
-                                        <span>Luật Sư Xuất Sắc</span>
-                                    </div>
-                                    <p class="achievement-detail">Vietnam Bar Association 2022</p>
-                                    <p class="achievement-description">Managing Partner được vinh danh là Luật sư xuất sắc của năm</p>
-                                </div>
-
-                                <div class="achievement-card">
-                                    <div class="achievement-badge">
-                                        <div class="achievement-icon">🏆</div>
-                                        <span>Dịch Vụ M&A Tốt Nhất</span>
-                                    </div>
-                                    <p class="achievement-detail">Legal 500 Asia Pacific 2023</p>
-                                    <p class="achievement-description">Được đánh giá cao trong lĩnh vực M&A và đầu tư</p>
-                                </div>
-
-                                <div class="achievement-card">
-                                    <div class="achievement-badge">
-                                        <div class="achievement-icon">🎖️</div>
-                                        <span>Innovation Award</span>
-                                    </div>
-                                    <p class="achievement-detail">Vietnam Legal Tech Awards 2023</p>
-                                    <p class="achievement-description">Ghi nhận đóng góp trong việc ứng dụng công nghệ vào pháp lý</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="achievement-category animate-in">
-                            <h3 class="category-title">Thành Tích Kinh Doanh</h3>
+                            <h3 class="category-title">Cam Kết Chất Lượng</h3>
                             <div class="business-metrics">
                                 <div class="metric-card">
-                                    <div class="metric-number">500+</div>
-                                    <div class="metric-label">Dự án thành công</div>
-                                    <div class="metric-description">Từ các giao dịch M&A đến tranh tụng phức tạp</div>
+                                    <div class="metric-number">9+</div>
+                                    <div class="metric-label">Dự án nổi bật</div>
+                                    <div class="metric-description">Từ hợp tác quốc tế đến các dự án trong nước</div>
                                 </div>
 
                                 <div class="metric-card">
-                                    <div class="metric-number">$2.5B</div>
-                                    <div class="metric-label">Tổng giá trị giao dịch</div>
-                                    <div class="metric-description">Các giao dịch M&A và đầu tư đã tư vấn</div>
+                                    <div class="metric-number">100%</div>
+                                    <div class="metric-label">Cam kết chất lượng</div>
+                                    <div class="metric-description">Giải pháp pháp lý toàn diện và hiệu quả</div>
                                 </div>
 
                                 <div class="metric-card">
-                                    <div class="metric-number">98%</div>
-                                    <div class="metric-label">Tỷ lệ thành công</div>
-                                    <div class="metric-description">Trong các vụ tranh tụng và trọng tài</div>
+                                    <div class="metric-number">2024</div>
+                                    <div class="metric-label">Năm thành lập</div>
+                                    <div class="metric-description">Kế thừa nền tảng chuyên gia từ QPVN</div>
                                 </div>
 
                                 <div class="metric-card">
-                                    <div class="metric-number">1000+</div>
-                                    <div class="metric-label">Khách hàng hài lòng</div>
-                                    <div class="metric-description">Từ startup đến các tập đoàn lớn</div>
+                                    <div class="metric-number">4+</div>
+                                    <div class="metric-label">Chuyên gia hàng đầu</div>
+                                    <div class="metric-description">Đội ngũ giàu kinh nghiệm và chuyên môn sâu</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="achievement-category animate-in">
-                            <h3 class="category-title">Dự Án Tiêu Biểu</h3>
+                            <h3 class="category-title">Dự Án Nổi Bật</h3>
                             <div class="featured-projects">
                                 <div class="project-card">
-                                    <div class="project-icon">🏦</div>
-                                    <h4>IPO Ngân hàng ABC</h4>
-                                    <p class="project-value">$500M</p>
-                                    <p class="project-description">Tư vấn pháp lý cho đợt IPO lớn nhất năm 2023</p>
+                                    <div class="project-icon">🤝</div>
+                                    <h4>Hợp Đồng Hợp Tác Quốc Tế</h4>
+                                    <p class="project-value">Vingroup & GL Events</p>
+                                    <p class="project-description">Xây dựng hợp đồng hợp tác quốc tế giữa Vingroup và GL Events (Pháp)</p>
                                     <div class="project-tags">
-                                        <span class="tag">Capital Markets</span>
-                                        <span class="tag">IPO</span>
-                                    </div>
-                                </div>
-
-                                <div class="project-card">
-                                    <div class="project-icon">🏭</div>
-                                    <h4>M&A Tập đoàn XYZ</h4>
-                                    <p class="project-value">$800M</p>
-                                    <p class="project-description">Thực hiện giao dịch M&A xuyên quốc gia lớn nhất</p>
-                                    <div class="project-tags">
+                                        <span class="tag">Hợp tác quốc tế</span>
                                         <span class="tag">M&A</span>
-                                        <span class="tag">Cross-border</span>
                                     </div>
                                 </div>
 
                                 <div class="project-card">
-                                    <div class="project-icon">⚡</div>
-                                    <h4>Dự án Năng lượng Sạch</h4>
-                                    <p class="project-value">$300M</p>
-                                    <p class="project-description">Tư vấn pháp lý cho dự án năng lượng tái tạo</p>
+                                    <div class="project-icon">🏖️</div>
+                                    <h4>Tư Vấn Vinpearl Hạ Long</h4>
+                                    <p class="project-value">Quy Trình Vận Hành</p>
+                                    <p class="project-description">Tư vấn quy trình vận hành cho Vinpearl Hạ Long</p>
                                     <div class="project-tags">
-                                        <span class="tag">Energy</span>
-                                        <span class="tag">Green Finance</span>
+                                        <span class="tag">Du lịch</span>
+                                        <span class="tag">Tư vấn vận hành</span>
                                     </div>
                                 </div>
 
                                 <div class="project-card">
-                                    <div class="project-icon">💻</div>
-                                    <h4>Fintech Startup</h4>
-                                    <p class="project-value">$50M</p>
-                                    <p class="project-description">Tư vấn pháp lý cho vòng gọi vốn Series B</p>
+                                    <div class="project-icon">🌴</div>
+                                    <h4>Khu Du Lịch Sinh Thái</h4>
+                                    <p class="project-value">Hòn Bà – Nha Trang</p>
+                                    <p class="project-description">Tư vấn phát triển khu du lịch sinh thái Hòn Bà – Nha Trang</p>
                                     <div class="project-tags">
-                                        <span class="tag">Fintech</span>
-                                        <span class="tag">Venture Capital</span>
+                                        <span class="tag">Du lịch sinh thái</span>
+                                        <span class="tag">Phát triển dự án</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-icon">💰</div>
+                                    <h4>Tư Vấn Pháp Chế</h4>
+                                    <p class="project-value">Cy Finance & Happy Money</p>
+                                    <p class="project-description">Tư vấn pháp chế thường xuyên cho Cy Finance (C22) và Happy Money</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Tài chính</span>
+                                        <span class="tag">Pháp chế</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-icon">🎈</div>
+                                    <h4>Dự Án Khinh Khí Cầu</h4>
+                                    <p class="project-value">Đồng Văn</p>
+                                    <p class="project-description">Tư vấn vận hành dự án khinh khí cầu Đồng Văn</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Du lịch</span>
+                                        <span class="tag">Vận hành dự án</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-icon">🌿</div>
+                                    <h4>Thiên Đường Thực Vật Yersin</h4>
+                                    <p class="project-value">530 Ha</p>
+                                    <p class="project-description">Dự án "Thiên đường thực vật Yersin" quy mô 530 ha</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Nông nghiệp</span>
+                                        <span class="tag">Dự án lớn</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-icon">🏎️</div>
+                                    <h4>F1 Vietnam Grand Prix</h4>
+                                    <p class="project-value">Đào Tạo Đội Ngũ</p>
+                                    <p class="project-description">Đào tạo đội ngũ điều hành F1 Vietnam Grand Prix</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Thể thao</span>
+                                        <span class="tag">Đào tạo</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card">
+                                    <div class="project-icon">🍃</div>
+                                    <h4>Nanum CNC (Hàn Quốc)</h4>
+                                    <p class="project-value">Chiến Lược Kinh Doanh</p>
+                                    <p class="project-description">Tư vấn chiến lược kinh doanh thực phẩm bảo vệ sức khỏe</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Quốc tế</span>
+                                        <span class="tag">Chiến lược</span>
                                     </div>
                                 </div>
                             </div>

@@ -201,6 +201,82 @@
 }
 
 /* Responsive Design */
+/* Pricing Table Styles */
+.pricing-table-container {
+    overflow-x: auto;
+    margin: 40px 0;
+    box-shadow: 0 8px 30px rgba(10, 37, 64, 0.1);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    font-size: 0.95rem;
+}
+
+.pricing-table thead {
+    background: linear-gradient(135deg, var(--navy), #1a3a5c);
+    color: var(--white);
+}
+
+.pricing-table th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--gold);
+}
+
+.pricing-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: top;
+    color: var(--dark-gray);
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.pricing-table tbody tr.highlight-row {
+    background-color: #fff9e6;
+    font-weight: 500;
+}
+
+.pricing-table tbody tr.highlight-row td {
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+.pricing-table strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.pricing-table td[rowspan] {
+    vertical-align: middle;
+    font-weight: 600;
+    color: var(--navy);
+    background-color: #f9fafb;
+}
+
+.pricing-note {
+    padding: 20px 25px;
+    background: #fff9e6;
+    border-top: 2px solid var(--gold);
+    border-radius: 0 0 12px 12px;
+}
+
+.pricing-note p {
+    margin: 0;
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .legal-services {
         padding: 60px 0;
@@ -227,6 +303,24 @@
     
     .enhanced-card {
         padding: 25px;
+    }
+
+    .pricing-table {
+        font-size: 0.85rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 10px 8px;
+    }
+
+    .pricing-table-container {
+        margin: 30px -5%;
+        border-radius: 0;
+    }
+
+    .pricing-note {
+        padding: 15px 20px;
     }
 }
 

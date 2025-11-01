@@ -59,6 +59,38 @@
     line-height: 1.6;
 }
 
+.company-info {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f9fafb;
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+}
+
+.company-info h4 {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.company-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company-info li {
+    padding: 8px 0;
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.company-info li strong {
+    color: var(--navy);
+    margin-right: 5px;
+}
+
 .about-visual {
     background: linear-gradient(135deg, rgba(10, 37, 64, 0.05), rgba(212, 175, 55, 0.05));
     padding: 40px;
