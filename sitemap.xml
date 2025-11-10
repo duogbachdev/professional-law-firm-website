@@ -48,4 +48,62 @@
         <priority>0.8</priority>
     </url>
 
+    <!-- People Detail Pages -->
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/people-detail.html?id=nguyen-thi-quy-phuong</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/people-detail.html?id=vu-dinh-hoang</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/people-detail.html?id=pham-thanh-tuan</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/people-detail.html?id=tran-trong-nam</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Service Detail Pages -->
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/service-detail.html?id=tu-van-doanh-nghiep</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/service-detail.html?id=tu-van-so-huu-tri-tue</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/service-detail.html?id=tu-van-phap-luat-dan-su</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://professional-law-firm-website-mhtw.vercel.app/service-detail.html?id=tu-van-phap-luat-hinh-su</loc>
+        <lastmod>2025-01-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>

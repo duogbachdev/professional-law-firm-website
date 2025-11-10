@@ -1,6 +1,6 @@
 {
-  "name": "Law Firm - Công Ty Luật Chuyên Nghiệp",
-  "short_name": "Law Firm",
+  "name": "VLNC - Công Ty Luật Chuyên Nghiệp",
+  "short_name": "VLNC",
   "description": "Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Cung cấp dịch vụ tư vấn pháp lý toàn diện tại Hà Nội.",
   "start_url": "/",
   "display": "standalone",
@@ -42,14 +42,14 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Law Firm Website Desktop View"
+      "label": "VLNC Website Desktop View"
     },
     {
       "src": "assets/images/screenshot-mobile.png",
       "sizes": "390x844",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Law Firm Website Mobile View"
+      "label": "VLNC Website Mobile View"
     }
   ],
   "shortcuts": [

@@ -20,39 +20,41 @@ class Contact {
                             Đội ngũ chuyên gia của chúng tôi sẵn sàng hỗ trợ 24/7.</p>
                             
                             <div class="contact-methods">
-                                <div class="contact-method">
-                                    <div class="method-icon">📞</div>
-                                    <div class="method-info">
-                                        <h4>Gọi điện trực tiếp</h4>
-                                        <p>+84 24 3823 4567</p>
-                                        <span>Thứ 2 - Thứ 6: 8:00 - 17:00</span>
+                                <div class="contact-method contact-method-large">
+                                    <div class="method-header">
+                                        <div class="method-icon">📞</div>
+                                        <h4>Liên Hệ Trực Tiếp</h4>
+                                    </div>
+                                    <div class="method-details">
+                                        <div class="method-detail-item">
+                                            <span class="detail-label">Điện thoại (Hotline):</span>
+                                            <span class="detail-value">096.812.7877</span>
+                                        </div>
+                                        <div class="method-detail-item">
+                                            <span class="detail-label">Thư điện tử (Email):</span>
+                                            <span class="detail-value">vietnamlegalconsulting@gmail.com</span>
+                                        </div>
+                                        <div class="method-detail-item">
+                                            <span class="detail-label">Giờ làm việc:</span>
+                                            <span class="detail-value">Thứ 2 - Thứ 6: 8:00 - 17:00</span>
+                                        </div>
+                                        <div class="method-detail-item">
+                                            <span class="detail-label">Phản hồi:</span>
+                                            <span class="detail-value">Trong 2 giờ</span>
+                                        </div>
                                     </div>
                                 </div>
                                 
-                                <div class="contact-method">
-                                    <div class="method-icon">✉️</div>
-                                    <div class="method-info">
-                                        <h4>Email tư vấn</h4>
-                                        <p>info@vnlc.vn</p>
-                                        <span>Phản hồi trong 2 giờ</span>
+                                <div class="contact-method contact-method-large">
+                                    <div class="method-header">
+                                        <div class="method-icon">📍</div>
+                                        <h4>Trụ Sở Chính</h4>
                                     </div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">📍</div>
-                                    <div class="method-info">
-                                        <h4>Văn phòng Hà Nội</h4>
-                                        <p>15 Lê Thánh Tông, Hoàn Kiếm</p>
-                                        <span>Tòa nhà VNLC Tower, Tầng 25-30</span>
-                                    </div>
-                                </div>
-                                
-                                <div class="contact-method">
-                                    <div class="method-icon">🏢</div>
-                                    <div class="method-info">
-                                        <h4>Văn phòng TP.HCM</h4>
-                                        <p>123 Nguyễn Huệ, Quận 1</p>
-                                        <span>Saigon Trade Center, Tầng 15-20</span>
+                                    <div class="method-details">
+                                        <div class="method-detail-item">
+                                            <p class="detail-address">Số 121, phố 8/3, C23, Phường Bạch Mai</p>
+                                            <p class="detail-address">Thành phố Hà Nội, Việt Nam</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +120,8 @@ class Contact {
                     </div>
                     
                     <div class="hero-buttons">
-                        <a href="tel:+842438234567" class="btn-primary">Gọi Ngay: 024.3823.4567</a>
-                        <a href="mailto:info@vnlc.vn" class="btn-secondary">Email: info@vnlc.vn</a>
+                        <a href="tel:0968127877" class="btn-primary">Gọi Ngay: 096.812.7877</a>
+                        <a href="mailto:vietnamlegalconsulting@gmail.com" class="btn-secondary">Email: vietnamlegalconsulting@gmail.com</a>
                     </div>
                 </div>
             </section>

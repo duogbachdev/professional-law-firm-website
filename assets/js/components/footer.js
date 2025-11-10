@@ -42,14 +42,14 @@ class Footer {
                     <div class="footer-section">
                         <h4>Liên Hệ</h4>
                         <ul>
-                            <li><a href="tel:+84123456789">+84 123 456 789</a></li>
-                            <li><a href="mailto:info@lawfirm.vn">info@lawfirm.vn</a></li>
-                            <li><a href="#">Hà Nội, Việt Nam</a></li>
+                            <li><a href="tel:0968127877">096.812.7877</a></li>
+                            <li><a href="mailto:vietnamlegalconsulting@gmail.com">vietnamlegalconsulting@gmail.com</a></li>
+                            <li>Số 121, phố 8/3, C23, Phường Bạch Mai, Hà Nội</li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Law Firm. Tất cả quyền được bảo lưu.</p>
+                    <p>&copy; 2025 VLNC. Tất cả quyền được bảo lưu.</p>
                 </div>
             </footer>
         `;

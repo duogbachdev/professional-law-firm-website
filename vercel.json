@@ -6,6 +6,14 @@
       "use": "@vercel/static"
     },
     {
+      "src": "people-detail.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "service-detail.html",
+      "use": "@vercel/static"
+    },
+    {
       "src": "assets/**",
       "use": "@vercel/static"
     }
@@ -16,8 +24,20 @@
       "dest": "/index.html"
     },
     {
+      "src": "/people-detail.html",
+      "dest": "/people-detail.html"
+    },
+    {
+      "src": "/service-detail.html",
+      "dest": "/service-detail.html"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }

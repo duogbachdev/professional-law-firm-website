@@ -41,7 +41,6 @@ class Hero {
                     
                     <div class="hero-buttons">
                         <a href="#contact" class="btn-primary">Liên Hệ Tư Vấn Miễn Phí</a>
-                        <a href="#services" class="btn-secondary">Khám Phá Dịch Vụ</a>
                     </div>
                     
                     <div class="hero-clients">

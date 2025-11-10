@@ -1,3 +1,352 @@
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--light-gray);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    margin-top: 70px;
+    max-width: 2000px;
+}
+
+.breadcrumb .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumb-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+    content: '›';
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.breadcrumb-list a {
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-list a:hover {
+    color: var(--gold);
+}
+
+.breadcrumb-list li:last-child {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* Person Detail Page */
+.person-detail-page {
+    padding: 60px 0 100px;
+    background: var(--light-gray);
+    min-height: calc(100vh - 200px);
+}
+
+.person-detail-page .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.person-detail-article {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 60px 50px;
+    box-shadow: 0 15px 50px rgba(10, 37, 64, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.person-detail-article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold), var(--light-gold), var(--gold));
+}
+
+/* Person Detail Header Page */
+/* Reset any inherited header styles and apply our own */
+.person-detail-header-page {
+    /* Reset navigation header styles */
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+    transition: none !important;
+    
+    /* Our specific styles */
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid rgba(212, 175, 55, 0.2);
+    display: block;
+}
+
+.person-detail-header-page::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+}
+
+.person-detail-avatar-large {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), rgba(10, 37, 64, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 72px;
+    font-weight: bold;
+    border: 6px solid var(--gold);
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.person-detail-avatar-large::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.2);
+    animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.person-detail-info-page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.person-detail-info-page h1 {
+    font-size: 2.8rem;
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.person-detail-position-page {
+    font-size: 1.5rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 10px 25px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 30px;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+.person-detail-specialization-page {
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    font-style: italic;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.person-detail-summary {
+    font-size: 1.15rem;
+    color: var(--dark-gray);
+    line-height: 1.9;
+    text-align: center;
+    margin-top: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.02), rgba(212, 175, 55, 0.05));
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+}
+
+/* Person Detail Body Page */
+.person-detail-body-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.detail-section-page {
+    padding: 35px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.02), rgba(212, 175, 55, 0.04));
+    border-radius: 16px;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(10, 37, 64, 0.05);
+}
+
+.detail-section-page h2 {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgba(212, 175, 55, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-section-page h2::before {
+    content: '▸';
+    color: var(--gold);
+    font-size: 1.3rem;
+}
+
+.detail-section-page h3 {
+    font-size: 1.4rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.detail-list-page {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-list-page li {
+    padding: 15px 0;
+    padding-left: 30px;
+    position: relative;
+    color: var(--dark-gray);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.detail-list-page li:last-child {
+    border-bottom: none;
+}
+
+.detail-list-page li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.detail-list-page li strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.experience-item-page {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 2px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 2px 10px rgba(10, 37, 64, 0.05);
+}
+
+.experience-item-page:last-child {
+    margin-bottom: 0;
+}
+
+.experience-period-page {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Person Detail Actions */
+.person-detail-actions {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(212, 175, 55, 0.2);
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--navy);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(10, 37, 64, 0.2);
+}
+
+.btn-back:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Not Found */
+.not-found {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.not-found h1 {
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-bottom: 20px;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
 /* Our People Section Styles */
 .our-people {
     padding: 100px 0;
@@ -226,6 +575,7 @@
 }
 
 .diversity-text p {
+    text-align: justify;
     font-size: 1.1rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.9);
@@ -271,8 +621,437 @@
     font-weight: 500;
 }
 
+/* Staff Section */
+.staff-section {
+    margin-top: 80px;
+}
+
+.staff-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.staff-description p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    line-height: 1.8;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Clickable Team Member */
+.team-member-clickable {
+    cursor: pointer;
+    position: relative;
+}
+
+.team-member-clickable::after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member-clickable:hover::after {
+    opacity: 0.5;
+}
+
+.team-member-clickable:hover {
+    border-color: var(--gold);
+    box-shadow: 0 15px 50px rgba(212, 175, 55, 0.2);
+}
+
+/* Person Detail Modal */
+.person-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.98), rgba(10, 37, 64, 0.95));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    animation: fadeInOverlay 0.4s ease forwards;
+}
+
+.person-modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInModal {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.person-modal {
+    background: var(--white);
+    border-radius: 24px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 92vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    transform: scale(0.9) translateY(60px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.person-modal-overlay.active .person-modal {
+    animation: slideInModal 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    transform: scale(1) translateY(0);
+}
+
+/* Decorative gradient border */
+.person-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold), var(--light-gold), var(--gold));
+    z-index: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: rgba(10, 37, 64, 0.9);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.modal-close:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.modal-close:active {
+    transform: rotate(90deg) scale(0.95);
+}
+
+.modal-content {
+    padding: 60px 50px 50px;
+    overflow-y: auto;
+    max-height: calc(92vh - 10px);
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(10, 37, 64, 0.05);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: var(--light-gold);
+}
+
+/* Person Detail Header */
+.person-detail-header {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 45px;
+    padding: 30px;
+    padding-bottom: 35px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.02), rgba(212, 175, 55, 0.05));
+    border-radius: 16px;
+    border-left: 5px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+.person-detail-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.person-detail-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), rgba(10, 37, 64, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 56px;
+    font-weight: bold;
+    border: 5px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.person-detail-avatar:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.person-detail-info {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.person-detail-info h2 {
+    font-size: 2.2rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.person-detail-position {
+    font-size: 1.3rem;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+}
+
+.person-detail-specialization {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Person Detail Body */
+.person-detail-body {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.detail-section {
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.02), rgba(212, 175, 55, 0.04));
+    border-radius: 16px;
+    border-left: 5px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(10, 37, 64, 0.05);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease both;
+    animation-delay: calc(var(--section-index, 0) * 0.1s);
+}
+
+.detail-section:nth-child(1) {
+    --section-index: 1;
+}
+
+.detail-section:nth-child(2) {
+    --section-index: 2;
+}
+
+.detail-section:nth-child(3) {
+    --section-index: 3;
+}
+
+.detail-section:nth-child(4) {
+    --section-index: 4;
+}
+
+.detail-section:nth-child(5) {
+    --section-index: 5;
+}
+
+.detail-section:nth-child(6) {
+    --section-index: 6;
+}
+
+.detail-section:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(10, 37, 64, 0.1);
+}
+
+.detail-section h3 {
+    font-size: 1.6rem;
+    color: var(--navy);
+    margin-bottom: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgba(212, 175, 55, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-section h3::before {
+    content: '▸';
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+.detail-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+    text-align: justify;
+}
+
+.detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-list li {
+    padding: 12px 0;
+    padding-left: 25px;
+    position: relative;
+    color: var(--dark-gray);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.detail-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.detail-list li strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.experience-item {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 2px solid rgba(212, 175, 55, 0.15);
+    box-shadow: 0 2px 10px rgba(10, 37, 64, 0.05);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    border-color: var(--gold);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+}
+
+.experience-period {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience-item h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
 /* Animation Classes */
-.team-section, .practice-groups, .team-values {
+.team-section, .practice-groups, .team-values, .staff-section {
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
@@ -280,9 +1059,31 @@
 
 .team-section.animate-in, 
 .practice-groups.animate-in, 
-.team-values.animate-in {
+.team-values.animate-in,
+.staff-section.animate-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+.subsection-title {
+    font-size: 2rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
 }
 
 /* Responsive Design */
@@ -295,6 +1096,19 @@
     
     .diversity-stats {
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .person-detail-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .modal-content {
+        padding: 40px 30px;
+    }
+    
+    .person-modal {
+        max-width: 95%;
     }
 }
 
@@ -336,6 +1150,139 @@
     .practice-stats {
         flex-direction: column;
         gap: 10px;
+    }
+    
+    .subsection-title {
+        font-size: 1.6rem;
+    }
+    
+    .staff-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        max-width: 100%;
+    }
+    
+    .person-detail-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 25px 20px;
+    }
+    
+    .person-detail-avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 48px;
+    }
+    
+    .person-detail-info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .person-detail-position {
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        padding: 40px 25px 30px;
+    }
+    
+    .detail-section {
+        padding: 25px 20px;
+    }
+    
+    .detail-section h3 {
+        font-size: 1.4rem;
+    }
+    
+    .modal-close {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+    
+    .person-modal {
+        max-width: 100%;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .person-modal-overlay {
+        padding: 0;
+    }
+    
+    .experience-item {
+        padding: 20px;
+    }
+
+    /* Person Detail Page Responsive */
+    .breadcrumb {
+        margin-top: 60px;
+        padding: 15px 0;
+    }
+
+    .person-detail-page {
+        padding: 40px 0 60px;
+    }
+
+    .person-detail-article {
+        padding: 40px 25px;
+        border-radius: 16px;
+    }
+
+    .person-detail-header-page {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .person-detail-avatar-large {
+        width: 150px;
+        height: 150px;
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    .person-detail-info-page h1 {
+        font-size: 2.2rem;
+    }
+
+    .person-detail-position-page {
+        font-size: 1.3rem;
+        padding: 8px 20px;
+    }
+
+    .person-detail-specialization-page {
+        font-size: 1.1rem;
+    }
+
+    .person-detail-summary {
+        font-size: 1.05rem;
+        padding: 20px;
+    }
+
+    .detail-section-page {
+        padding: 25px 20px;
+    }
+
+    .detail-section-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .detail-list-page li {
+        padding: 12px 0;
+        padding-left: 25px;
+        font-size: 1rem;
+    }
+
+    .experience-item-page {
+        padding: 20px;
+    }
+
+    .btn-back {
+        padding: 12px 30px;
+        font-size: 1rem;
     }
 }
 

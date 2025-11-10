@@ -35,8 +35,8 @@
 
 .contact-methods {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .contact-method {
@@ -49,15 +49,76 @@
 }
 
 .contact-method:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 35px rgba(10, 37, 64, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(10, 37, 64, 0.15);
+    border-color: var(--gold);
+}
+
+.method-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.1);
 }
 
 .method-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05));
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
+.contact-method h4 {
+    font-size: 1.4rem;
+    color: var(--navy);
+    font-weight: 700;
+    margin: 0;
+}
+
+.method-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.method-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.detail-address {
+    font-size: 1.1rem;
+    color: var(--navy);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+.detail-address:first-child {
+    margin-bottom: 8px;
+}
+
+/* Legacy styles for backward compatibility */
 .method-info h4 {
     font-size: 1.1rem;
     color: var(--navy);
@@ -257,7 +318,21 @@
     
     .contact-methods {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
+    }
+    
+    .contact-method-large {
+        padding: 30px;
+    }
+    
+    .method-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .method-icon {
+        margin: 0 auto;
     }
     
     .form-row {
@@ -273,6 +348,25 @@
     
     .contact-info h2 {
         font-size: 2rem;
+    }
+    
+    .contact-method-large {
+        padding: 25px 20px;
+    }
+    
+    .contact-method h4 {
+        font-size: 1.2rem;
+    }
+    
+    .method-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+    
+    .detail-value,
+    .detail-address {
+        font-size: 1rem;
     }
     
     .contact-form-section {

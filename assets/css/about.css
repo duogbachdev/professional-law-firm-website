@@ -10,6 +10,286 @@
     padding: 0 5%;
 }
 
+/* Section Headers */
+.about-vnlc .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-vnlc .section-title {
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.about-vnlc .decorative-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--gold), var(--light-gold));
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.about-vnlc .decorative-line {
+    width: 100px;
+    height: 4px;
+    margin: 20px auto;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    border-radius: 2px;
+}
+
+/* Thank You Section */
+.thank-you-section {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.03), rgba(212, 175, 55, 0.03));
+    border-radius: 20px;
+    padding: 60px 50px;
+    margin-bottom: 80px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.thank-you-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.thank-you-greeting {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.thank-you-text {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+.thank-you-text p {
+    margin-bottom: 20px;
+}
+
+.thank-you-text p:last-of-type {
+    margin-bottom: 0;
+}
+
+.thank-you-closing {
+    font-weight: 600;
+    color: var(--gold);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.thank-you-signature {
+    margin-top: 50px;
+    text-align: right;
+    padding-top: 30px;
+    border-top: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.signature-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.signature-title {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Intro Section */
+.intro-section {
+    margin-bottom: 80px;
+}
+
+.intro-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.intro-main {
+    padding-right: 20px;
+}
+
+.intro-subtitle {
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.intro-highlight {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.05), rgba(212, 175, 55, 0.05));
+    border-radius: 12px;
+    border-left: 4px solid var(--gold);
+}
+
+.intro-highlight h4 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.intro-highlight p {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    line-height: 1.7;
+}
+
+.intro-highlight p strong {
+    color: var(--navy);
+}
+
+.intro-visual {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.05), rgba(212, 175, 55, 0.05));
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    position: sticky;
+    top: 120px;
+}
+
+/* History Section */
+.history-section {
+    margin-bottom: 80px;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.02), rgba(212, 175, 55, 0.02));
+    border-radius: 20px;
+}
+
+.history-content {
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.history-content p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: var(--dark-gray);
+    margin-bottom: 25px;
+}
+
+.history-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Company Values Section */
+.company-values-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.company-info-card {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.05), rgba(212, 175, 55, 0.05));
+    padding: 40px;
+    border-radius: 16px;
+    border-left: 4px solid var(--gold);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-info-card h3 {
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    width: 100%;
+}
+
+.company-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 40px;
+}
+
+.company-info-list li {
+    padding: 12px 0;
+    color: var(--dark-gray);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.company-info-list li strong {
+    color: var(--navy);
+    margin-right: 10px;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 180px;
+}
+
+.values-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: var(--white);
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 25px rgba(10, 37, 64, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(10, 37, 64, 0.15);
+    border-color: var(--gold);
+}
+
+.value-card .value-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.value-card h4 {
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: var(--dark-gray);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.value-card p strong {
+    color: var(--navy);
+    font-weight: 600;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -23,6 +303,7 @@
 }
 
 .lead-text {
+    text-align: justify;
     font-size: 1.2rem;
     line-height: 1.8;
     color: var(--dark-gray);
@@ -304,6 +585,23 @@
 }
 
 /* Animation Classes */
+.thank-you-section,
+.intro-section,
+.history-section,
+.company-values-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.thank-you-section.animate-in,
+.intro-section.animate-in,
+.history-section.animate-in,
+.company-values-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .timeline-item {
     opacity: 0;
     transform: translateY(30px);
@@ -337,6 +635,41 @@
         padding-right: 0;
     }
     
+    .intro-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .intro-visual {
+        position: static;
+    }
+    
+    .company-info-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .values-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .company-info-card {
+        max-width: 100%;
+    }
+    
+    .values-cards {
+        max-width: 100%;
+    }
+    
+    .thank-you-section {
+        padding: 40px 30px;
+    }
+    
+    .history-section {
+        padding: 40px 30px;
+    }
+    
     .timeline::before {
         left: 30px;
     }
@@ -363,6 +696,62 @@
 @media (max-width: 768px) {
     .about-vnlc {
         padding: 60px 0;
+    }
+    
+    .about-vnlc .section-title {
+        font-size: 2rem;
+    }
+    
+    .about-vnlc .decorative-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .thank-you-section {
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+    
+    .thank-you-greeting {
+        font-size: 1.2rem;
+    }
+    
+    .thank-you-text {
+        font-size: 1rem;
+    }
+    
+    .thank-you-signature {
+        text-align: center;
+    }
+    
+    .intro-section,
+    .history-section {
+        margin-bottom: 50px;
+    }
+    
+    .intro-section {
+        padding: 0;
+    }
+    
+    .history-section {
+        padding: 30px 20px;
+    }
+    
+    .history-content p {
+        font-size: 1rem;
+    }
+    
+    .intro-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .company-info-card {
+        padding: 25px;
+    }
+    
+    .value-card {
+        padding: 25px 20px;
     }
     
     .about-stats {

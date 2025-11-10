@@ -21,6 +21,22 @@
     gap: 80px;
 }
 
+.achievement-section {
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.achievement-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.achievement-section:last-child {
+    margin-bottom: 0;
+}
+
 .achievement-category {
     opacity: 1;
     transform: translateY(30px);
@@ -360,8 +376,214 @@
     border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
+/* Thank You Section */
+.thank-you-section {
+    border-radius: 16px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.thank-you-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.thank-you-greeting {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.thank-you-text {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.thank-you-text p {
+    margin-bottom: 20px;
+}
+
+.thank-you-text p:last-child {
+    margin-bottom: 0;
+}
+
+.thank-you-closing {
+    font-weight: 600;
+    color: var(--gold);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.thank-you-signature {
+    margin-top: 40px;
+    text-align: right;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.signature-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+.signature-title {
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+/* Intro Section */
+.intro-section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.intro-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.intro-subtitle {
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.intro-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.intro-item p strong {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* History Section */
+.history-section {
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 16px;
+    padding: 50px;
+}
+
+.history-content {
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+
+.history-content p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.history-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Section Header Styles */
+.achievement-section .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.achievement-section .section-title {
+    font-size: 2.2rem;
+    color: var(--white);
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.achievement-section .decorative-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.achievement-section .decorative-line {
+    width: 80px;
+    height: 3px;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .thank-you-content,
+    .history-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements {
+        padding: 60px 0;
+    }
+    
+    .achievement-section {
+        margin-bottom: 50px;
+    }
+    
+    .thank-you-section,
+    .intro-section,
+    .history-section {
+        padding: 30px 20px;
+    }
+    
+    .thank-you-greeting {
+        font-size: 1.1rem;
+    }
+    
+    .thank-you-text,
+    .history-content p {
+        font-size: 1rem;
+    }
+    
+    .achievement-section .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .signature-name {
+        font-size: 1.1rem;
+    }
+    
     .achievements .timeline::before {
         left: 30px;
     }
@@ -385,51 +607,14 @@
     }
 }
 
-@media (max-width: 768px) {
-    .achievements {
-        padding: 60px 0;
+@media (max-width: 480px) {
+    .thank-you-section,
+    .intro-section,
+    .history-section {
+        padding: 25px 15px;
     }
     
-    .achievements-showcase {
-        gap: 60px;
-    }
-    
-    .achievements-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .business-metrics {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .featured-projects {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .social-contributions {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .achievements .timeline-item {
-        padding-left: 50px;
-    }
-    
-    .achievements .timeline-year {
-        left: -40px;
-        min-width: 70px;
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-    
-    .category-title {
-        font-size: 1.8rem;
-    }
-    
-    .metric-number {
-        font-size: 2.5rem;
+    .thank-you-signature {
+        text-align: center;
     }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Cung cấp dịch vụ tư vấn pháp lý toàn diện: M&A, tranh tụng, thị trường vốn, sở hữu trí tuệ, luật doanh nghiệp và nhiều lĩnh vực khác tại Hà Nội.">
     <meta name="keywords" content="công ty luật, tư vấn pháp lý, luật sư, M&A, tranh tụng, thị trường vốn, sở hữu trí tuệ, luật doanh nghiệp, luật hình sự, luật dân sự, luật bất động sản, luật lao động, luật thuế, luật công nghệ">
-    <meta name="author" content="Law Firm">
+    <meta name="author" content="VLNC">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
@@ -24,8 +24,8 @@
     <meta property="og:image" content="https://professional-law-firm-website-mhtw.vercel.app/assets/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Law Firm - Công ty luật chuyên nghiệp">
-    <meta property="og:site_name" content="Law Firm">
+    <meta property="og:image:alt" content="VLNC - Công ty luật chuyên nghiệp">
+    <meta property="og:site_name" content="VLNC">
     <meta property="og:locale" content="vi_VN">
 
     <!-- Twitter -->
@@ -34,7 +34,7 @@
     <meta property="twitter:title" content="⚖️ Công Ty Luật Chuyên Nghiệp - Tư Vấn Pháp Lý Hàng Đầu">
     <meta property="twitter:description" content="Công ty luật chuyên nghiệp với hơn 15 năm kinh nghiệm. Dịch vụ tư vấn pháp lý toàn diện: M&A, tranh tụng, thị trường vốn tại Hà Nội.">
     <meta property="twitter:image" content="https://professional-law-firm-website-mhtw.vercel.app/assets/images/og-image.jpg">
-    <meta property="twitter:image:alt" content="Law Firm - Công ty luật chuyên nghiệp">
+    <meta property="twitter:image:alt" content="VLNC - Công ty luật chuyên nghiệp">
     <meta property="twitter:site" content="@lawfirm">
     <meta property="twitter:creator" content="@lawfirm">
 
@@ -73,14 +73,21 @@
     <!-- Header -->
     <header>
         <nav>
-            <div class="logo">LAW FIRM</div>
+            <div class="logo">VLNC</div>
             <div class="nav-main">
                 <ul class="nav-links">
                     <li><a href="#home">Trang Chủ</a></li>
-                    <li><a href="#services">Dịch Vụ Pháp Lý</a></li>
                     <li><a href="#about">About VNLC</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">Dịch vụ pháp lý <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-detail.html?id=tu-van-doanh-nghiep">Tư vấn Doanh nghiệp</a></li>
+                            <li><a href="service-detail.html?id=tu-van-so-huu-tri-tue">Tư vấn Sở hữu trí tuệ</a></li>
+                            <li><a href="service-detail.html?id=tu-van-phap-luat-dan-su">Tư vấn pháp luật Dân sự</a></li>
+                            <li><a href="service-detail.html?id=tu-van-phap-luat-hinh-su">Tư vấn pháp luật Hình sự</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#people">Our People</a></li>
-                    <li><a href="#achievements">Thành Tựu</a></li>
                     <li><a href="#contact">Liên Hệ</a></li>
                 </ul>
                 <button class="menu-toggle" onclick="toggleMegaMenu()">
@@ -99,7 +106,7 @@
     <div id="hero-container"></div>
 
     <!-- Legal Services Section (Combined Capabilities, Expertise, Industries) -->
-    <div id="services-container"></div>
+    <div id="services-container" style="display: none;"></div>
 
     <!-- About VNLC Section -->
     <div id="about-container"></div>
@@ -108,13 +115,13 @@
     <div id="people-container"></div>
 
     <!-- Achievements Section -->
-    <div id="achievements-container"></div>
+    <div id="achievements-container" style="display: none;"></div>
 
     <!-- Testimonials Section -->
     <div id="testimonials-container"></div>
 
     <!-- Stats Section -->
-    <div id="stats-container"></div>
+    <div id="stats-container" style="display: none;"></div>
 
     <!-- Contact CTA Section -->
     <div id="contact-container"></div>
@@ -148,6 +155,7 @@
     <script src="assets/js/components/hero.js"></script>
     <script src="assets/js/components/legal-services.js"></script>
     <script src="assets/js/components/about.js"></script>
+    <script src="assets/js/components/people-data.js"></script>
     <script src="assets/js/components/people.js"></script>
     <script src="assets/js/components/achievements.js"></script>
     <script src="assets/js/components/testimonials.js"></script>
@@ -161,13 +169,14 @@
     {
         "@context": "https://schema.org",
         "@type": "LegalService",
-        "name": "Law Firm",
+        "name": "VLNC",
         "description": "Công ty luật hàng đầu với hơn 15 năm kinh nghiệm cung cấp dịch vụ pháp lý chuyên nghiệp",
         "url": "https://professional-law-firm-website-mhtw.vercel.app",
-        "telephone": "+84 123 456 789",
-        "email": "info@professional-law-firm.com",
+        "telephone": "+84968127877",
+        "email": "vietnamlegalconsulting@gmail.com",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Số 121, phố 8/3, C23, Phường Bạch Mai",
             "addressLocality": "Hà Nội",
             "addressCountry": "VN"
         },

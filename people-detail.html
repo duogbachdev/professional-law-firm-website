@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" id="meta-description">
+    <meta name="keywords" content="luật sư, chuyên gia pháp lý, VNLC, Vietnam Legal Consulting" id="meta-keywords">
+    <meta name="author" content="VNLC">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="Vietnamese">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="" id="og-url">
+    <meta property="og:title" content="" id="og-title">
+    <meta property="og:description" content="" id="og-description">
+    <meta property="og:site_name" content="VNLC">
+    <meta property="og:locale" content="vi_VN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="" id="twitter-url">
+    <meta property="twitter:title" content="" id="twitter-title">
+    <meta property="twitter:description" content="" id="twitter-description">
+
+    <link rel="canonical" href="" id="canonical-url">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    
+    <title id="page-title">Thông Tin Chuyên Gia - VNLC</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/people.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" id="structured-data">
+    </script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">VLNC</a></div>
+            <div class="nav-main">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Trang Chủ</a></li>
+                    <li><a href="index.html#about">About VNLC</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="dropdown-trigger">Dịch vụ pháp lý <span class="dropdown-arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-detail.html?id=tu-van-doanh-nghiep">Tư vấn Doanh nghiệp</a></li>
+                            <li><a href="service-detail.html?id=tu-van-so-huu-tri-tue">Tư vấn Sở hữu trí tuệ</a></li>
+                            <li><a href="service-detail.html?id=tu-van-phap-luat-dan-su">Tư vấn pháp luật Dân sự</a></li>
+                            <li><a href="service-detail.html?id=tu-van-phap-luat-hinh-su">Tư vấn pháp luật Hình sự</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#people">Our People</a></li>
+                    <li><a href="index.html#contact">Liên Hệ</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMegaMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index.html#people">Our People</a></li>
+                <li id="breadcrumb-current">Thông Tin Chuyên Gia</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Person Detail Content -->
+    <main class="person-detail-page">
+        <div class="container">
+            <div id="person-detail-content">
+                <!-- Content will be dynamically loaded -->
+                <div class="loading">Đang tải thông tin...</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Mega Menu -->
+    <div id="mega-menu-container"></div>
+
+    <!-- Scripts -->
+    <script src="assets/js/components/people-data.js"></script>
+    <script src="assets/js/components/people-detail.js"></script>
+    <script src="assets/js/components/footer.js"></script>
+    <script src="assets/js/components/mega-menu.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Initialize mega menu
+        window.megaMenuInstance = new MegaMenu();
+        function toggleMegaMenu() {
+            window.megaMenuInstance.toggle();
+        }
+    </script>
+</body>
+</html>
+
