@@ -2,8 +2,12 @@
 class Achievements {
     constructor() {
         this.achievementsContainer = document.getElementById('achievements-container');
-        this.isAchievementsPage = window.location.pathname.includes('achievements.html');
+        // More robust page detection
+        const pathname = window.location.pathname;
+        const filename = pathname.split('/').pop();
+        this.isAchievementsPage = filename === 'achievements.html' || pathname.includes('achievements.html');
         console.log('Achievements constructor - container found:', this.achievementsContainer);
+        console.log('Pathname:', pathname);
         console.log('Is achievements page:', this.isAchievementsPage);
         // Only initialize if container exists (for achievements.html page)
         // On index.html, this component won't be loaded
