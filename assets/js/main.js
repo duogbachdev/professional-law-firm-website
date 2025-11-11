@@ -68,11 +68,16 @@ class App {
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const href = this.getAttribute('href');
+                const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
                     });
                     // Close mega menu if open
                     const megaMenu = document.getElementById('megaMenu');
@@ -84,6 +89,32 @@ class App {
                 }
             });
         });
+        
+        // Handle hash on page load
+        if (window.location.hash) {
+            // Wait for page to fully load and dynamic content to render
+            const scrollToHash = () => {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                    const headerOffset = 100;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    return true;
+                }
+                return false;
+            };
+            
+            // Try immediately, then after a delay for dynamic content
+            if (!scrollToHash()) {
+                setTimeout(() => {
+                    scrollToHash();
+                }, 500);
+            }
+        }
     }
 
     // Keyboard navigation

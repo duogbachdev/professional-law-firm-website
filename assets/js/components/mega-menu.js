@@ -28,6 +28,7 @@ class MegaMenu {
                             </div>
                         </div>
                         <a href="#people" class="mobile-nav-link">Our People</a>
+                        <a href="achievements.html" class="mobile-nav-link">Thành tựu</a>
                         <a href="#contact" class="mobile-nav-link">Liên Hệ</a>
                     </div>
 
